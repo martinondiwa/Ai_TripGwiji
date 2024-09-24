@@ -117,14 +117,14 @@ export default function SignUp() {
           marginTop: 50,
         }}
       >
-        <Text
+        <TouchableOpacity
           style={{
             color: Colors.WHITE,
             textAlign: "center",
           }}
         >
           Create Account
-        </Text>
+        </TouchableOpacity>
       </View>
       {/**Create Account */}
       <View
