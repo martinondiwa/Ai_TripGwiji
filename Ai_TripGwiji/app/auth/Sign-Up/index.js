@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useNavigation } from 'expo-router';
 import { Colors } from "./../../../constants/Colors"; 
 import { StyleSheet } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 
 export default function SignUp() {
   const navigation=useNavigation();
@@ -54,6 +55,23 @@ export default function SignUp() {
         <Text style={{ fontFamily: "outfit" }}>Password</Text>
         <TextInput style={styles.input} secureTextEntry={true} placeholder="Enter Password"></TextInput>
       </View>
+
+      {/**Sign In Button */}
+      <View 
+      style={{
+        padding:25,
+        backgroundColor:Colors.PRIMARY,
+        borderRadius:15, 
+        marginTop:50
+      }}>
+      <Text
+     style={{
+      color:Colors.WHITE,
+      textAlign:'center'
+     }}
+      >Sign In</Text>
+      </View>
+       
     </View>
   )
 }
