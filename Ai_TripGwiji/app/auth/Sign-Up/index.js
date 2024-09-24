@@ -26,6 +26,16 @@ export default function SignUp() {
       }}
       >Create new Account</Text>
 
+      {/**Full name*/}
+      <View
+        style={{
+          marginTop: 50,
+        }}
+      >
+        <Text style={{ fontFamily: "outfit" }}>Full Name</Text>
+        <TextInput style={styles.input} placeholder="Enter Full Name"></TextInput>
+      </View>
+
       {/**Email */}
       <View
         style={{
