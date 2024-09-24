@@ -13,7 +13,7 @@ export default function SignIn() {
     <View
      style={{
       padding:25,
-      marginTop:60,
+      marginTop:80,
       backgroundColor:Colors.WHITE,
       height:'100%'
      }}
