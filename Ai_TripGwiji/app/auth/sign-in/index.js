@@ -70,7 +70,8 @@ export default function SignIn() {
             style={{
               padding:25,
               backgroundColor:Colors.PRIMARY,
-              borderRadius:15
+              borderRadius:15, 
+              marginTop:50
             }}>
             <Text
            style={{
@@ -79,6 +80,21 @@ export default function SignIn() {
            }}
             >Sign In</Text>
             </View>
+             {/**Create Account */}
+             <View 
+             style={{
+               padding:25,
+               backgroundColor:Colors.PRIMARY,
+               borderRadius:15, 
+               marginTop:50
+             }}>
+             <Text
+            style={{
+             color:Colors.WHITE,
+             textAlign:'center'
+            }}
+             >Create Account</Text>
+             </View>
     </View>
   );
 }
