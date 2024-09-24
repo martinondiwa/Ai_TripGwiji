@@ -84,13 +84,13 @@ export default function SignIn() {
              <View 
              style={{
                padding:25,
-               backgroundColor:Colors.PRIMARY,
+               backgroundColor:Colors.WHITE,
                borderRadius:15, 
                marginTop:50
              }}>
              <Text
             style={{
-             color:Colors.WHITE,
+             color:Colors.PRIMARY,
              textAlign:'center'
             }}
              >Create Account</Text>
