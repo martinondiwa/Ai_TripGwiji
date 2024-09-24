@@ -43,12 +43,16 @@ export default function SignIn() {
       >You have been missed</Text>
       <View>
        <Text>Email</Text>
-       <TextInput placeholder='Enter Email'></TextInput>
+       <TextInput
+       style={styles.input}
+        placeholder='Enter Email'></TextInput>
       </View>
     </View>
   )
 }
 
 const styles =StyleSheet.create({
-
+input:{
+  
+}
 })
