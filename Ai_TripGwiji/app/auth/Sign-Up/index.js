@@ -4,7 +4,7 @@ import { useNavigation } from 'expo-router';
 import { Colors } from "./../../../constants/Colors"; 
 import { StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native';
-
+import { router } from 'expo-router';
 export default function SignUp() {
   const navigation=useNavigation();
 
@@ -69,9 +69,26 @@ export default function SignUp() {
       color:Colors.WHITE,
       textAlign:'center'
      }}
-      >Sign In</Text>
+      >Create Account</Text>
       </View>
+       {/**Create Account */}
+       <View 
        
+       style={{
+         padding:25,
+         backgroundColor:Colors.WHITE,
+         borderRadius:15, 
+         marginTop:20,
+         borderWidth:1
+       }}>
+       <TouchableOpacity
+       onPress={() => router.push("/auth/sign-in")}
+      style={{
+       color:Colors.PRIMARY,
+       textAlign:'center'
+      }}
+       ><Text> Sign In</Text></TouchableOpacity>
+       </View>
     </View>
   )
 }
