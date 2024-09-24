@@ -86,7 +86,8 @@ export default function SignIn() {
                padding:25,
                backgroundColor:Colors.WHITE,
                borderRadius:15, 
-               marginTop:50
+               marginTop:50,
+               borderWidth:1
              }}>
              <Text
             style={{
