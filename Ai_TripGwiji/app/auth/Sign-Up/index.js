@@ -12,6 +12,7 @@ import { useState } from "react";
 import { getAuth } from "firebase/auth";
 
 
+
 export default function SignUp() {
   const navigation = useNavigation();
   const router = useRouter();
@@ -28,7 +29,8 @@ export default function SignUp() {
 
    const OnCreateAccount=()=>{
 
-    if(!email&&!password&&!fullName){
+    if(!email ||!password ||!fullName)
+      {
      ToastAndroid.show('Please enter all details',ToastAndroid.LONG)
      return;
     }
@@ -117,7 +119,8 @@ export default function SignUp() {
           marginTop: 50,
         }}
       >
-        <TouchableOpacity>
+        <TouchableOpacity 
+        onPress={OnCreateAccount}>
          <Text
          style={{
           color: Colors.WHITE,
