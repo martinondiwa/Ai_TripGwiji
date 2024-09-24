@@ -104,7 +104,10 @@ export default function SignIn() {
             color:Colors.WHITE,
             textAlign:'center'
            }}
-            >Sign In</TouchableOpacity>
+            ><Text  style={{
+              color:Colors.WHITE,
+              textAlign:'center'
+             }}>Sign In</Text></TouchableOpacity>
             </View>
              {/**Create Account */}
              <View 
