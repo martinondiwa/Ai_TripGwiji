@@ -52,7 +52,7 @@ export default function Login() {
             fontSize: 17,
           }}
         >
-          Get Started
+         <Text> Get Started</Text>
         </TouchableOpacity>
       </View>
     </View>
