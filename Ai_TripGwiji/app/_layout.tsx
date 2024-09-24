@@ -10,7 +10,7 @@ useFonts({
 })
 
   return (
-    <Stack>
+    <Stack screenOptions={{headerShown:false}}>
       <Stack.Screen name="index" />
     </Stack>
   );

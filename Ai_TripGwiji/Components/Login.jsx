@@ -16,7 +16,7 @@ export default function Login() {
         }}/>
         
         <View style={styles.container}>
-        <Text style={{fontSize:25, fontFamily:'outfit-bold', textAlign:'center'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
+        <Text style={{fontSize:25, fontFamily:'outfit-bold', textAlign:'center', marginTop: 15}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
         <Text style={{
           fontFamily:'outfit',
           fontSize:17, 
@@ -45,6 +45,6 @@ const styles = StyleSheet.create({
     padding: 15,
     backgroundColor:Colors.PRIMARY,
     borderRadius:99,
-    marginTop:'30%'
+    marginTop:'20%'
   }
 })
