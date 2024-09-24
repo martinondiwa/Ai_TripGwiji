@@ -1,6 +1,6 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
-
+import { StyleSheet } from 'react-native'
 
 export default function Login() {
   return (
@@ -16,3 +16,7 @@ export default function Login() {
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  
+})
