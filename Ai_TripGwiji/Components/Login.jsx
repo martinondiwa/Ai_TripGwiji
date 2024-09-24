@@ -51,6 +51,7 @@ export default function Login() {
                 color: Colors.WHITE,
                 fontFamily: "outfit",
                 fontSize: 17,
+          
               }}
             >
               Get Started
@@ -80,5 +81,6 @@ const styles = StyleSheet.create({
     borderRadius: 99,
     marginTop: "20%",
     alignItems: "center", // Center the button contents
+    
   },
 });
