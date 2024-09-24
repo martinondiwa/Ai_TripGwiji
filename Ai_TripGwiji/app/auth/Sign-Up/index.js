@@ -22,7 +22,7 @@ export default function SignUp() {
         backgroundColor: Colors.WHITE,
         height:'100%'
       }}
-    > <TouchableOpacity><Ionicons name="chevron-back-circle" size={24} color="black" /></TouchableOpacity>
+    > <TouchableOpacity onPress={()=>router.back}><Ionicons name="chevron-back-circle" size={24} color="black" /></TouchableOpacity>
       <Text
         style={{
           fontFamily: "outfit-bold",
