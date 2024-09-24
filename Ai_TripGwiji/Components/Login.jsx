@@ -23,6 +23,9 @@ export default function Login() {
           textAlign:'center', 
           Color:Colors.GRAY}}>Discover tailor-made travel experiences with ease. From dream destinations to budget-friendly stays, let us plan your perfect journey. Start exploring today!</Text>
         </View>
+        <View>
+         <Text>Sign in with Google</Text>
+        </View>
     </View>
   )
 }
