@@ -38,7 +38,7 @@ export default function SignIn() {
         fontFamily:'outfit',
         fontSize:30,
         Color:Colors.GRAY,
-        marginTop:20
+        marginTop:10
       }} 
       >You have been missed</Text>
       <View style={{
