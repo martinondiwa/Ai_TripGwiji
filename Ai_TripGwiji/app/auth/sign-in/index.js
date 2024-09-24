@@ -22,6 +22,18 @@ export default function SignIn() {
         fontSize:30,
       }} 
       >Let's Sign You in</Text>
+      <Text
+      style={{
+        fontFamily:'outfit',
+        fontSize:30,
+      }} 
+      >Welcome Back</Text>
+      <Text
+      style={{
+        fontFamily:'outfit-bold',
+        fontSize:30,
+      }} 
+      >Let's Sign You in</Text>
     </View>
   )
 }
