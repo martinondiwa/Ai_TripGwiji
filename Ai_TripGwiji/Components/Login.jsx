@@ -13,7 +13,7 @@ export default function Login() {
         source={require("./../assets/images/download.png")}
         style={{
           width: "100%",
-          height: 300,
+          height: 400,
         }}
       />
 
