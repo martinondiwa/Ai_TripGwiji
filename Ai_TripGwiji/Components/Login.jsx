@@ -14,7 +14,7 @@ export default function Login() {
          }}/>
 
         <View>
-        <Text style={{fontSize:25, fontFamily:'outfit-bold'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
+        <Text style={{fontSize:25, fontFamily:'outfit-bold', textAlign:'center'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
         </View>
     </View>
   )
