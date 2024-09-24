@@ -2,6 +2,7 @@ import { View, Text, TextInput } from 'react-native'
 import React, { useEffect } from 'react'
 import {useNavigation} from 'expo-router'
 import {Colors} from './../../../constants/Colors'
+import { StyleSheet } from 'react-native'
 export default function SignIn() {
   const navigation=useNavigation();
    useEffect(()=>{
@@ -47,3 +48,7 @@ export default function SignIn() {
     </View>
   )
 }
+
+const styles =StyleSheet.create({
+
+})
