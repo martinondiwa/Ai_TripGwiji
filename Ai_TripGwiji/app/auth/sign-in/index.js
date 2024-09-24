@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, ToastAndroid } from "react-native";
 import React, { useEffect } from "react";
 import { router, useNavigation, useRouter } from "expo-router";
 import { Colors } from "./../../../constants/Colors";
@@ -25,9 +25,10 @@ export default function SignIn() {
   const onSignIn=()=>{
      if(!email&&!password)
      {
+      ToastAndroid.show("Please Enter Email & Password",ToastAndroid.LONG)
       return;
      }
-     
+
     signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
