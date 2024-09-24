@@ -8,7 +8,7 @@ export default function Index() {
         
       }}
     >
-      <Text>Subscrie to TripGwiji</Text>
+      <Text style={{fontSize:30, fontFamily:'outfit-bold'}}>Subscrie to TripGwiji</Text>
     </View>
   );
 }
