@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import {useNavigation} from 'expo-router'
-
+import {colors} from './../../../constants/Colors'
 export default function SignIn() {
   const navigation=useNavigation();
    useEffect(()=>{
