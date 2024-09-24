@@ -44,6 +44,7 @@ export default function Login() {
       </View>
       <View style={styles.button}>
         <TouchableOpacity
+        onPress={()=> router.push('/auth/sign-in')}
           style={{
             color: Colors.WHITE,
             textAlign: "center",
