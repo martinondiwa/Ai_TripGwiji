@@ -79,7 +79,7 @@ export default function SignIn() {
         }}
       >
         <Text style={{ fontFamily: "outfit" }}>Email</Text>
-        <TextInput style={styles.input} placeholder="Enter Email"></TextInput>
+        <TextInput style={styles.input} onChangeText={(value)=>setEmail(value)} placeholder="Enter Email"></TextInput>
       </View>
             {/**Password */}
       <View
