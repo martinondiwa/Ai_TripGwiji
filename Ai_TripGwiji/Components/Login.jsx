@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
   container:{
     backgroundColor:Colors.WHITE,
     marginTop:-20,
-    flex:1,
     height:'100%'
   }
 })
