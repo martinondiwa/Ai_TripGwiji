@@ -6,6 +6,9 @@ import { StyleSheet } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import Ionicons from '@expo/vector-icons/Ionicons';
+import createUserWithEmailAndPassword from 'firebase/auth';
+import { auth } from "../../../configs/FirebaseConfig";
+
 export default function SignUp() {
   const navigation = useNavigation();
   const router = useRouter();
@@ -14,6 +17,21 @@ export default function SignUp() {
       headershown: false,
     });
   }, []);
+
+   const OnCreateAccount=()=>{
+    createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+
+   }
   return (
     <View
       style={{
