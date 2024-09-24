@@ -71,7 +71,7 @@ export default function SignUp() {
         <TextInput
           style={styles.input}
           placeholder="Enter Full Name"
-          onChange={(value)=>console.log(value)}
+          onChangeText={setFullName}
         ></TextInput>
       </View>
 
@@ -82,7 +82,7 @@ export default function SignUp() {
         }}
       >
         <Text style={{ fontFamily: "outfit" }}>Email</Text>
-        <TextInput style={styles.input} placeholder="Enter Email"></TextInput>
+        <TextInput style={styles.input} placeholder="Enter Email"  onChangeText={setEmail}></TextInput>
       </View>
       {/**Password */}
       <View
@@ -95,6 +95,7 @@ export default function SignUp() {
           style={styles.input}
           secureTextEntry={true}
           placeholder="Enter Password"
+          onChangeText={setPassword}
         ></TextInput>
       </View>
 
