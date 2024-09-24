@@ -39,7 +39,7 @@ export default function SignUp() {
       {/**Email */}
       <View
         style={{
-          marginTop: 50,
+          marginTop: 20,
         }}
       >
         <Text style={{ fontFamily: "outfit" }}>Email</Text>
