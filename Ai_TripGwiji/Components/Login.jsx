@@ -5,9 +5,10 @@ import React from 'react'
 export default function Login() {
   return (
     <View>
-         <Image src={require('./../assets/images/logom.JPG')} 
-         style={{
-          width:'100',
+    
+         <Image source={require('./../assets/images/download.png')} 
+         style={{ 
+          width:'100%',
           height:500
          }}/>
     </View>
