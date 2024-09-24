@@ -22,11 +22,12 @@ export default function SignUp() {
         backgroundColor: Colors.WHITE,
         height:'100%'
       }}
-    ><Ionicons name="chevron-back-circle" size={24} color="black" />
+    > <TouchableOpacity><Ionicons name="chevron-back-circle" size={24} color="black" /></TouchableOpacity>
       <Text
         style={{
           fontFamily: "outfit-bold",
           fontSize: 35,
+          marginTop:30
         }}
       >
         Create new Account
