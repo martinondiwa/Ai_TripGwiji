@@ -19,6 +19,7 @@ export default function SignUp() {
         padding: 25,
         paddingTop: 50,
         backgroundColor: Colors.WHITE,
+        height:'100%'
       }}
     >
       <Text
