@@ -1,21 +1,21 @@
-import { Stack } from "expo-router";
-import {useFonts} from "expo-font"
+import { Text, View } from "react-native";
+import Login from './../Components/Login'
+import {auth} from './../configs/FirebaseConfig'
+import { Redirect, Stack } from "expo-router";
 export default function RootLayout() {
-  
-useFonts({
-'outfit':require('./../assets/fonts/Outfit-Regular.ttf'),
-'outfit-mediunm':require('./../assets/fonts/Outfit-Medium.ttf'),
-'outfit-bold':require('./../assets/fonts/Outfit-Bold.ttf'),
-
+  'outfit-medium':require('./../assets/fonts/Outfit-Medium.ttf'),
+  'outfit-bold':require('./../assets/fonts/Outfit-Bold.ttf')
 })
+  
+  const user=auth.currentUser;
 
   return (
-  <Stack>
-  {/** <Stack screenOptions={{headerShown:false}}>
-      <Stack.Screen name="index" />
-    </Stack>*/}
-    
-    <Stack.Screen name="(tabs)"/>
-    </Stack>
+ <Stack screenOptions={{
+  headerShown:false
+ }}>
+  {/**<Stack.Screen name="index" options={{headerShown:false}}/>*/}
+
+  <Stack.Screen name="(tabs)"/>
+ </Stack>
   );
 }
