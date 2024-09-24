@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, TextInput } from 'react-native'
 import React, { useEffect } from 'react'
 import {useNavigation} from 'expo-router'
 import {Colors} from './../../../constants/Colors'
@@ -40,6 +40,10 @@ export default function SignIn() {
         marginTop:20
       }} 
       >You have been missed</Text>
+      <View>
+       <Text>Email</Text>
+       <TextInput placeholder='Enter Email'></TextInput>
+      </View>
     </View>
   )
 }
