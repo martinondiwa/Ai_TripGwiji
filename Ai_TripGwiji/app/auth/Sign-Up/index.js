@@ -8,11 +8,14 @@ import { router } from "expo-router";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import createUserWithEmailAndPassword from 'firebase/auth';
 import { auth } from "../../../configs/FirebaseConfig";
+import { useState } from "react";
 
 export default function SignUp() {
   const navigation = useNavigation();
   const router = useRouter();
-  useEffect(() => {
+
+  const [email,setEmail]=useState();
+  useEffect(()=>{
     navigation.setOptions({
       headershown: false,
     });
@@ -29,7 +32,7 @@ export default function SignUp() {
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorMessage);
+    console.log(errorMessage, errorCode);
     // ..
   });
 
