@@ -29,7 +29,7 @@ export default function SignUp() {
    const OnCreateAccount=()=>{
 
     if(email?.length>0&&password.length>0&&fullName.length>0){
-     ToastAndroid.show('Please enter all details',ToastAndroid.BOTTOM)
+     ToastAndroid.show('Please enter all details',ToastAndroid.LONG)
      return;
     }
 
@@ -117,13 +117,13 @@ export default function SignUp() {
           marginTop: 50,
         }}
       >
-        <TouchableOpacity
-          style={{
-            color: Colors.WHITE,
-            textAlign: "center",
-          }}
-        >
-          Create Account
+        <TouchableOpacity>
+         <Text
+         style={{
+          color: Colors.WHITE,
+          textAlign: "center",
+        }}
+         > Create Account</Text>
         </TouchableOpacity>
       </View>
       {/**Create Account */}
