@@ -21,7 +21,9 @@ export default function Login() {
           fontFamily:'outfit',
           fontSize:17, 
           textAlign:'center', 
-          Color:Colors.GRAY}}>Discover tailor-made travel experiences with ease. From dream destinations to budget-friendly stays, let us plan your perfect journey. Start exploring today!</Text>
+          Color:Colors.GRAY,
+          marginTop:20
+        }}>Discover tailor-made travel experiences with ease. From dream destinations to budget-friendly stays, let us plan your perfect journey. Start exploring today!</Text>
         </View>
         <View style={styles.button}>
          <Text style={{color:Colors.WHITE, textAlign:'center', fontFamily:'outfit', fontSize:17}}>Sign in with Google</Text>
