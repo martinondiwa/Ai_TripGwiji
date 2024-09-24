@@ -2,6 +2,7 @@ import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Colors } from '@/constants/Colors'
+import { FontDisplay } from 'expo-font'
 
 export default function Login() {
   return (
@@ -16,7 +17,7 @@ export default function Login() {
         
         <View style={styles.container}>
         <Text style={{fontSize:25, fontFamily:'outfit-bold', textAlign:'center'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
-        <Text>Discover tailor-made travel experiences with ease. From dream destinations to budget-friendly stays, let us plan your perfect journey. Start exploring today!</Text>
+        <Text style={{fontFamily:'outfit',  fontSize:17, textAlign:'center'}}>Discover tailor-made travel experiences with ease. From dream destinations to budget-friendly stays, let us plan your perfect journey. Start exploring today!</Text>
         </View>
     </View>
   )
