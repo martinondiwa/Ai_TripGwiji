@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import React, { useEffect } from "react";
 import { useNavigation } from "expo-router";
 import { Colors } from "./../../../constants/Colors";
@@ -86,15 +86,15 @@ export default function SignIn() {
                padding:25,
                backgroundColor:Colors.WHITE,
                borderRadius:15, 
-               marginTop:50,
+               marginTop:20,
                borderWidth:1
              }}>
-             <Text
+             <TouchableOpacity
             style={{
              color:Colors.PRIMARY,
              textAlign:'center'
             }}
-             >Create Account</Text>
+             ><Text> Create Account</Text></TouchableOpacity>
              </View>
     </View>
   );
