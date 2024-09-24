@@ -17,7 +17,7 @@ export default function Login() {
         
         <View style={styles.container}>
         <Text style={{fontSize:25, fontFamily:'outfit-bold', textAlign:'center'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
-        <Text style={{fontFamily:'outfit',  fontSize:17, textAlign:'center'}}>Discover tailor-made travel experiences with ease. From dream destinations to budget-friendly stays, let us plan your perfect journey. Start exploring today!</Text>
+        <Text style={{fontFamily:'outfit',  fontSize:17, textAlign:'center, color:Colors.GRAY}}>Discover tailor-made travel experiences with ease. From dream destinations to budget-friendly stays, let us plan your perfect journey. Start exploring today!</Text>
         </View>
     </View>
   )
