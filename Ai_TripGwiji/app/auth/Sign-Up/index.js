@@ -23,7 +23,7 @@ export default function SignUp() {
       fontFamily:'outfit-bold',
       fontSize:35
       }}
-      >SignUp</Text>
+      >Create new Account</Text>
     </View>
   )
 }
