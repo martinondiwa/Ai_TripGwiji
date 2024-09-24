@@ -23,6 +23,11 @@ export default function SignIn() {
   }, []);
 
   const onSignIn=()=>{
+     if(!email&&!password)
+     {
+      return;
+     }
+     
     signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
