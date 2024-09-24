@@ -53,6 +53,9 @@ export default function SignIn() {
 
 const styles =StyleSheet.create({
 input:{
-  
+  padding:15,
+  borderWidth:1,
+  borderRadius:15,
+  borderColor:Colors.GRAY
 }
 })
