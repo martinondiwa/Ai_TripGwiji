@@ -92,7 +92,8 @@ export default function SignIn() {
                backgroundColor:Colors.WHITE,
                borderRadius:15, 
                marginTop:20,
-               borderWidth:1
+               borderWidth:1,
+               alignItems:'center'
              }}>
              <TouchableOpacity
              onPress={()=>router.replace('auth/Sign-Up')}
