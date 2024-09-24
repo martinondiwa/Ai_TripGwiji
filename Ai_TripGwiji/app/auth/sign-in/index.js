@@ -59,7 +59,7 @@ export default function SignIn() {
 
       <View
         style={{
-          marginTop: 50,
+          marginTop: 20,
         }}
       >
         <Text style={{ fontFamily: "outfit" }}>Password</Text>
