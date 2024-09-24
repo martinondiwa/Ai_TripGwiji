@@ -13,7 +13,7 @@ export default function SignIn() {
     <View
      style={{
       padding:25,
-      margin:30
+      marginTop:60
      }}
     >
       <Text
