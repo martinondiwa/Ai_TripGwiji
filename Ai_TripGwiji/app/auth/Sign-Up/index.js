@@ -9,7 +9,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import createUserWithEmailAndPassword from 'firebase/auth';
 import { auth } from "../../../configs/FirebaseConfig";
 import { useState } from "react";
-import { getAuth } from "firebase/auth";
+
 
 
 
