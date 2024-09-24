@@ -1,13 +1,13 @@
 import { View, Text , TextInput} from 'react-native'
 import React, { useEffect } from 'react'
-import { useNavigation } from 'expo-router';
+import { useNavigation, useRouter } from 'expo-router';
 import { Colors } from "./../../../constants/Colors"; 
 import { StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 import { router } from 'expo-router';
 export default function SignUp() {
   const navigation=useNavigation();
-
+  const router=useRouter();
   useEffect(()=>{
     navigation.setOptions({
       headershown:false
