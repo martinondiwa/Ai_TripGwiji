@@ -88,7 +88,7 @@ export default function SignIn() {
         }}
       >
         <Text style={{ fontFamily: "outfit" }}>Password</Text>
-        <TextInput style={styles.input} secureTextEntry={true} placeholder="Enter Password"></TextInput>
+        <TextInput style={styles.input} secureTextEntry={true}  onChangeText={(value)=>setPassword(value)}  placeholder="Enter Password"></TextInput>
       </View>
             {/**Sign In Button */}
             <View 
