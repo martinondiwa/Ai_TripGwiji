@@ -24,7 +24,7 @@ export default function SignIn() {
         height: "100%",
       }}
     >
-  <TouchableOpacity onPress={()=>router.back}>  <Ionicons name="chevron-back-circle" size={24} color="black" /></TouchableOpacity>
+       <TouchableOpacity onPress={()=>router.back()}><Ionicons name="chevron-back-circle" size={24} color="black" /></TouchableOpacity>
       <Text
         style={{
           fontFamily: "outfit-bold",
