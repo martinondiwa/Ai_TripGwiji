@@ -12,7 +12,7 @@ export default function Login() {
           height:500
          }}/>
 
-         <Text>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
+         <Text style={{fontSize:25, fontFamily:'outfit-bold'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
     </View>
   )
 }
