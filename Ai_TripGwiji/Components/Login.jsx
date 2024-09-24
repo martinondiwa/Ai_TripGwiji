@@ -5,16 +5,18 @@ import { Colors } from '@/constants/Colors'
 
 export default function Login() {
   return (
-    <View style={styles.container}>
+    <View >
     
-         <Image source={require('./../assets/images/download.png')} 
-         style={{ 
-          width:'100%',
-          height:400
-         }}/>
-
-        <View>
+        
+        <Image  source={require('./../assets/images/download.png')} 
+        style={{ 
+         width:'100%',
+         height:400
+        }}/>
+        
+        <View style={styles.container}>
         <Text style={{fontSize:25, fontFamily:'outfit-bold', textAlign:'center'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
+        <Text>Discover tailor-made travel experiences with ease. From dream destinations to budget-friendly stays, let us plan your perfect journey. Start exploring today!</Text>
         </View>
     </View>
   )
