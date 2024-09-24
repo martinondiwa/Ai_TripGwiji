@@ -11,6 +11,8 @@ export default function Login() {
           width:'100%',
           height:500
          }}/>
+
+         <Text>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
     </View>
   )
 }
