@@ -3,8 +3,10 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { Colors } from "@/constants/Colors";
 import { FontDisplay } from "expo-font";
+import { useRouter } from "expo-router";
 
 export default function Login() {
+  const router= useRouter()
   return (
     <View style={styles.wrapper}>
       <Image
