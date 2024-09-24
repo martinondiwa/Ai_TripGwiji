@@ -26,15 +26,18 @@ export default function SignIn() {
       style={{
         fontFamily:'outfit',
         fontSize:30,
-        Color:Colors.GRAY
+        Color:Colors.GRAY,
+        marginTop:20
       }} 
       >Welcome Back</Text>
       <Text
       style={{
-        fontFamily:'outfit-bold',
+        fontFamily:'outfit',
         fontSize:30,
+        Color:Colors.GRAY,
+        marginTop:20
       }} 
-      >Let's Sign You in</Text>
+      >You have been missed</Text>
     </View>
   )
 }
