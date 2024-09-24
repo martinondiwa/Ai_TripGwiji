@@ -13,13 +13,16 @@ export default function Login() {
           height:500
          }}/>
 
-         <Text style={{fontSize:25, fontFamily:'outfit-bold'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
+        <View style={styles.container}>
+        <Text style={{fontSize:25, fontFamily:'outfit-bold'}}>Trip Gwiji, Your Most Trusted Ai-Travel Planner</Text>
+        </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container:{
-    backgroundColor:Colors.WHITE
+    backgroundColor:Colors.WHITE,
+    marginTop:-20
   }
 })
