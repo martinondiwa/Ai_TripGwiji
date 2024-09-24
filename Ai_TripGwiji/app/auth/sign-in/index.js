@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { router, useNavigation, useRouter } from "expo-router";
 import { Colors } from "./../../../constants/Colors";
 import { StyleSheet } from "react-native";
+
 export default function SignIn() {
   const navigation = useNavigation();
 
@@ -85,7 +86,7 @@ export default function SignIn() {
             </View>
              {/**Create Account */}
              <View 
-             onPress={()=>router.replace('auth/Sign-Up')}
+             
              style={{
                padding:25,
                backgroundColor:Colors.WHITE,
@@ -94,6 +95,7 @@ export default function SignIn() {
                borderWidth:1
              }}>
              <TouchableOpacity
+             onPress={()=>router.replace('auth/Sign-Up')}
             style={{
              color:Colors.PRIMARY,
              textAlign:'center'
