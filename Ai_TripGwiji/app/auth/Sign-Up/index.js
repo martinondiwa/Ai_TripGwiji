@@ -72,7 +72,8 @@ export default function SignUp() {
         <TextInput
           style={styles.input}
           placeholder="Enter Full Name"
-          onChangeText={setFullName}
+          onChangeText={(value)=>setFullName(value)}
+        
         ></TextInput>
       </View>
 
