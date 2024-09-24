@@ -66,13 +66,16 @@ export default function SignIn() {
         <TextInput style={styles.input} secureTextEntry={true} placeholder="Enter Password"></TextInput>
       </View>
             {/**Sign In Button */}
-            <View>
-            <Text
+            <View 
             style={{
               padding:15,
               backgroundColor:Colors.PRIMARY,
               borderRadius:15
-            }}
+            }}>
+            <Text
+           style={{
+            color:Colors.WHITE
+           }}
             >Sign In</Text>
             </View>
     </View>
