@@ -67,7 +67,13 @@ export default function SignIn() {
       </View>
             {/**Sign In Button */}
             <View>
-            <Text>Sign In</Text>
+            <Text
+            style={{
+              padding:15,
+              backgroundColor:Colors.PRIMARY,
+              borderRadius:15
+            }}
+            >Sign In</Text>
             </View>
     </View>
   );
