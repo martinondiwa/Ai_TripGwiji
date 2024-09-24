@@ -6,10 +6,9 @@ import { StyleSheet } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import Ionicons from '@expo/vector-icons/Ionicons';
-import createUserWithEmailAndPassword from 'firebase/auth';
 import { auth } from "../../../configs/FirebaseConfig";
 import { useState } from "react";
-
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 
 
 
