@@ -42,7 +42,7 @@ export default function SignIn() {
       }} 
       >You have been missed</Text>
       <View style={{
-        marginTop:30
+        marginTop:50
       }}>
        <Text>Email</Text>
        <TextInput
