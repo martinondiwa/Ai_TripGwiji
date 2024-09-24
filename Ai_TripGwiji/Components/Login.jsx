@@ -2,18 +2,18 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { StyleSheet } from "react-native";
 import { Colors } from "@/constants/Colors";
-import { FontDisplay } from "expo-font";
 import { useRouter } from "expo-router";
 
 export default function Login() {
-  const router= useRouter();
+  const router = useRouter();
+
   return (
     <View style={styles.wrapper}>
       <Image
         source={require("./../assets/images/download.png")}
         style={{
           width: "100%",
-          height: 520,
+          height: 300,
         }}
       />
 
@@ -33,7 +33,7 @@ export default function Login() {
             fontFamily: "outfit",
             fontSize: 17,
             textAlign: "center",
-            Color: Colors.GRAY,
+            color: Colors.GRAY, // Fixed the color property
             marginTop: 20,
           }}
         >
@@ -41,25 +41,31 @@ export default function Login() {
           destinations to budget-friendly stays, let us plan your perfect
           journey. Start exploring today!
         </Text>
-      </View>
-      <View style={styles.button}>
-        <TouchableOpacity
-        onPress={()=> router.push('/auth/sign-in')}
-          style={{
-            color: Colors.WHITE,
-            textAlign: "center",
-            fontFamily: "outfit",
-            fontSize: 17,
-          }}
-        >
-         <Text> Get Started</Text>
-        </TouchableOpacity>
+        <View style={styles.button}>
+          <TouchableOpacity
+            onPress={() => router.push("/auth/sign-in")}
+            style={{ alignItems: "center" }} // Ensure text is centered
+          >
+            <Text
+              style={{
+                color: Colors.WHITE,
+                fontFamily: "outfit",
+                fontSize: 17,
+              }}
+            >
+              Get Started
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  wrapper: {
+    flex: 1, // Ensure the wrapper takes full height
+  },
   container: {
     backgroundColor: Colors.WHITE,
     marginTop: -20,
@@ -73,5 +79,6 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.PRIMARY,
     borderRadius: 99,
     marginTop: "20%",
+    alignItems: "center", // Center the button contents
   },
 });
