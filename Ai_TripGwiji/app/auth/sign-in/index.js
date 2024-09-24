@@ -41,7 +41,9 @@ export default function SignIn() {
         marginTop:20
       }} 
       >You have been missed</Text>
-      <View>
+      <View style={{
+        marginTop:30
+      }}>
        <Text>Email</Text>
        <TextInput
        style={styles.input}
