@@ -47,7 +47,7 @@ export default function SignIn() {
       >
         You have been missed
       </Text>
-      
+      {/**Email */}
       <View
         style={{
           marginTop: 50,
@@ -56,7 +56,7 @@ export default function SignIn() {
         <Text style={{ fontFamily: "outfit" }}>Email</Text>
         <TextInput style={styles.input} placeholder="Enter Email"></TextInput>
       </View>
-
+            {/**Password */}
       <View
         style={{
           marginTop: 20,
@@ -65,6 +65,10 @@ export default function SignIn() {
         <Text style={{ fontFamily: "outfit" }}>Password</Text>
         <TextInput style={styles.input} secureTextEntry={true} placeholder="Enter Password"></TextInput>
       </View>
+            {/**Sign In Button */}
+            <View>
+            <Text>Sign In</Text>
+            </View>
     </View>
   );
 }
