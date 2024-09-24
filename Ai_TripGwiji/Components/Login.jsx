@@ -23,6 +23,8 @@ export default function Login() {
 const styles = StyleSheet.create({
   container:{
     backgroundColor:Colors.WHITE,
-    marginTop:-20
+    marginTop:-20,
+    flex:1,
+    height:'100%'
   }
 })
