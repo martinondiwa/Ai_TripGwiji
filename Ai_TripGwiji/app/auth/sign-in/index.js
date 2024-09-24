@@ -4,6 +4,9 @@ import { router, useNavigation, useRouter } from "expo-router";
 import { Colors } from "./../../../constants/Colors";
 import { StyleSheet } from "react-native";
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../configs/FirebaseConfig";
+import { getAuth } from "firebase/auth";
 
 export default function SignIn() {
   const navigation = useNavigation();
