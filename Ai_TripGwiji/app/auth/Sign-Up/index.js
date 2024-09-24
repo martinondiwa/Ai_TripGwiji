@@ -1,6 +1,8 @@
 import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from 'expo-router';
+import { Colors } from "./../../../constants/Colors"; 
+
 export default function SignUp() {
   const navigation=useNavigation();
 
@@ -10,8 +12,18 @@ export default function SignUp() {
     })
   },[])
   return (
-    <View>
-      <Text>SignUp</Text>
+    <View
+    style={{
+      padding:25,
+      paddingTop:50
+    }}
+    >
+      <Text
+      style={{
+      fontFamily:'outfit-bold',
+      fontSize:35
+      }}
+      >SignUp</Text>
     </View>
   )
 }
