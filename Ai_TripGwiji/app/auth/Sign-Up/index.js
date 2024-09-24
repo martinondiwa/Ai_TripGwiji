@@ -71,7 +71,7 @@ export default function SignUp() {
         <TextInput
           style={styles.input}
           placeholder="Enter Full Name"
-          onChange={(value)=>console.log}
+          onChange={(value)=>console.log(value)}
         ></TextInput>
       </View>
 
