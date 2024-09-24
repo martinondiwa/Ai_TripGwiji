@@ -10,11 +10,15 @@ import createUserWithEmailAndPassword from 'firebase/auth';
 import { auth } from "../../../configs/FirebaseConfig";
 import { useState } from "react";
 
+
 export default function SignUp() {
   const navigation = useNavigation();
   const router = useRouter();
 
   const [email,setEmail]=useState();
+  const [password,setPassword]=useState();
+  const [fullName,setFullName]=useState();
+
   useEffect(()=>{
     navigation.setOptions({
       headershown: false,
@@ -67,6 +71,7 @@ export default function SignUp() {
         <TextInput
           style={styles.input}
           placeholder="Enter Full Name"
+          onChange={(value)=>console.log}
         ></TextInput>
       </View>
 
