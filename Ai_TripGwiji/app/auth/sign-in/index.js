@@ -106,10 +106,7 @@ export default function SignIn() {
             }}>
             <TouchableOpacity
             onPress={onSignIn}
-           style={{
-            color:Colors.WHITE,
-            textAlign:'center'
-           }}
+          
             ><Text  style={{
               color:Colors.WHITE,
               textAlign:'center'
