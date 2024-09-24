@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { router, useNavigation, useRouter } from "expo-router";
 import { Colors } from "./../../../constants/Colors";
 import { StyleSheet } from "react-native";
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function SignIn() {
   const navigation = useNavigation();
@@ -23,6 +24,7 @@ export default function SignIn() {
         height: "100%",
       }}
     >
+    <Ionicons name="chevron-back-circle" size={24} color="black" />
       <Text
         style={{
           fontFamily: "outfit-bold",
