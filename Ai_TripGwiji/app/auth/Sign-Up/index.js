@@ -29,7 +29,7 @@ export default function SignUp() {
    const OnCreateAccount=()=>{
 
     if(email?.length>0&&password.length>0&&fullName.length>0){
-     ToastAndroid.show('Please enter all details')
+     ToastAndroid.show('Please enter all details',ToastAndroid.BOTTOM)
      return;
     }
 
