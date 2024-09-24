@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import {useNavigation} from 'expo-router'
-import {colors} from './../../../constants/Colors'
+import {Colors} from './../../../constants/Colors'
 export default function SignIn() {
   const navigation=useNavigation();
    useEffect(()=>{
@@ -26,6 +26,7 @@ export default function SignIn() {
       style={{
         fontFamily:'outfit',
         fontSize:30,
+        Color:Colors.GRAY
       }} 
       >Welcome Back</Text>
       <Text
