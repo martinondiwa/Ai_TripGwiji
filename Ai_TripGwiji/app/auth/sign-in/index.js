@@ -24,7 +24,7 @@ export default function SignIn() {
         height: "100%",
       }}
     >
-    <Ionicons name="chevron-back-circle" size={24} color="black" />
+  <TouchableOpacity>  <Ionicons name="chevron-back-circle" size={24} color="black" /></TouchableOpacity>
       <Text
         style={{
           fontFamily: "outfit-bold",
