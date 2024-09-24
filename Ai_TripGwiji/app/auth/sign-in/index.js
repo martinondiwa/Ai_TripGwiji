@@ -7,10 +7,13 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../configs/FirebaseConfig";
 import { getAuth } from "firebase/auth";
+import { useState } from "react";
 
 export default function SignIn() {
   const navigation = useNavigation();
-
+  
+  const [email,setEmail]=useState();
+  const [password,setPassword]=useState();
   const router=useRouter();
 
   useEffect(() => {
@@ -95,12 +98,13 @@ export default function SignIn() {
               borderRadius:15, 
               marginTop:50
             }}>
-            <Text
+            <TouchableOpacity
+            onPress={onSignIn}
            style={{
             color:Colors.WHITE,
             textAlign:'center'
            }}
-            >Sign In</Text>
+            >Sign In</TouchableOpacity>
             </View>
              {/**Create Account */}
              <View 
