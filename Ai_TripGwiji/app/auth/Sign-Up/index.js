@@ -18,7 +18,7 @@ export default function SignUp() {
     <View
       style={{
         padding: 25,
-        paddingTop: 50,
+        paddingTop: 40,
         backgroundColor: Colors.WHITE,
         height:'100%'
       }}
