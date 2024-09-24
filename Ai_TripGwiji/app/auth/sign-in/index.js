@@ -68,13 +68,14 @@ export default function SignIn() {
             {/**Sign In Button */}
             <View 
             style={{
-              padding:15,
+              padding:25,
               backgroundColor:Colors.PRIMARY,
               borderRadius:15
             }}>
             <Text
            style={{
-            color:Colors.WHITE
+            color:Colors.WHITE,
+            textAlign:'center'
            }}
             >Sign In</Text>
             </View>
