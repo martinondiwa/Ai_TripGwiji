@@ -1,10 +1,13 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import React, { useEffect } from "react";
-import { useNavigation } from "expo-router";
+import { router, useNavigation, useRouter } from "expo-router";
 import { Colors } from "./../../../constants/Colors";
 import { StyleSheet } from "react-native";
 export default function SignIn() {
   const navigation = useNavigation();
+
+  const router=useRouter();
+
   useEffect(() => {
     navigation.setOptions({
       headershown: false,
@@ -82,6 +85,7 @@ export default function SignIn() {
             </View>
              {/**Create Account */}
              <View 
+             onPress={()=>router.replace()}
              style={{
                padding:25,
                backgroundColor:Colors.WHITE,
