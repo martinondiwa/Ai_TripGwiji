@@ -44,7 +44,7 @@ export default function SignIn() {
       <View style={{
         marginTop:50
       }}>
-       <Text>Email</Text>
+       <Text style={{fontFamily:'outfit'}}>Email</Text>
        <TextInput
        style={styles.input}
         placeholder='Enter Email'></TextInput>
@@ -58,6 +58,7 @@ input:{
   padding:15,
   borderWidth:1,
   borderRadius:15,
-  borderColor:Colors.GRAY
+  borderColor:Colors.GRAY,
+  fontFamily:'outfit'
 }
 })
