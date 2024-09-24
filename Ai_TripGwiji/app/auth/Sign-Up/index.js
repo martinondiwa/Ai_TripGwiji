@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, ToastAndroid } from "react-native";
 import React, { useEffect } from "react";
 import { useNavigation, useRouter } from "expo-router";
 import { Colors } from "./../../../constants/Colors";
@@ -27,6 +27,13 @@ export default function SignUp() {
   }, []);
 
    const OnCreateAccount=()=>{
+
+    if(email?.length>0&&password.length>0&&fullName.length>0){
+     ToastAndroid.BOTTOM
+     return;
+    }
+
+
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed up 
