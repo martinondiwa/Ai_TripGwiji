@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { StyleSheet } from "react-native";
 import { Colors } from "@/constants/Colors";
@@ -6,7 +6,7 @@ import { FontDisplay } from "expo-font";
 import { useRouter } from "expo-router";
 
 export default function Login() {
-  const router= useRouter()
+  const router= useRouter();
   return (
     <View style={styles.wrapper}>
       <Image
@@ -43,7 +43,7 @@ export default function Login() {
         </Text>
       </View>
       <View style={styles.button}>
-        <Text
+        <TouchableOpacity
           style={{
             color: Colors.WHITE,
             textAlign: "center",
@@ -51,8 +51,8 @@ export default function Login() {
             fontSize: 17,
           }}
         >
-          Sign in with Google
-        </Text>
+          Get Started
+        </TouchableOpacity>
       </View>
     </View>
   );
