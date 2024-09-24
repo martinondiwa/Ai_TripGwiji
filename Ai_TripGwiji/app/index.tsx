@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import Login from './../Components/Login';
 
 export default function Index() {
   return (
@@ -8,7 +9,7 @@ export default function Index() {
         
       }}
     >
-      <Text style={{fontSize:30, fontFamily:'outfit-bold'}}>Subscrie to TripGwiji</Text>
-    </View>
+     <Login/>
+      </View>
   );
 }
