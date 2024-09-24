@@ -85,7 +85,7 @@ export default function SignIn() {
             </View>
              {/**Create Account */}
              <View 
-             onPress={()=>router.replace()}
+             onPress={()=>router.replace('auth/Sign-Up')}
              style={{
                padding:25,
                backgroundColor:Colors.WHITE,
