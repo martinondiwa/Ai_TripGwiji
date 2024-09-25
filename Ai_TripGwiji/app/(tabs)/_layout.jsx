@@ -2,11 +2,13 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import {Tabs} from 'expo-router'
 import EvilIcons from '@expo/vector-icons/EvilIcons';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export default function TabLayout() {
   return (
 <Tabs screenOptions={{
-  headerShown:false
+  headerShown:false,
+  tabBarActiveTintColor:Colors
 }}>
   <Tabs.Screen name="mytrip"
   options={{
