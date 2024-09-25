@@ -15,6 +15,7 @@ export default function TabLayout() {
   />
   <Tabs.Screen name="mytrip"
   options={{
+    tabBarLabel:'My Trip',
     tabBarIcon:({color})=><EvilIcons name="location" size={24} color="black" />
   }}
   />
