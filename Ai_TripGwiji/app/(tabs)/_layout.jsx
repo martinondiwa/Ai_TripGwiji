@@ -22,8 +22,18 @@ export default function TabLayout() {
     tabBarIcon:({color})=><EvilIcons name="location" size={24} color={color} />
   }}
   />
-  <Tabs.Screen name="discover"/>
-  <Tabs.Screen name="profile"/>
+  <Tabs.Screen name="discover"
+  options={{
+    tabBarLabel:'Discover',
+    tabBarIcon:({color})=><EvilIcons name="location" size={24} color={color} />
+  }}
+  />
+  <Tabs.Screen name="profile"
+  options={{
+    tabBarLabel:'Profile',
+    tabBarIcon:({color})=><EvilIcons name="location" size={24} color={color} />
+  }}
+  />
   
 </Tabs>
   )
