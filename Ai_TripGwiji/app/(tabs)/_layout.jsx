@@ -9,10 +9,14 @@ export default function TabLayout() {
 }}>
   <Tabs.Screen name="mytrip"
   options={{
-    <EvilIcons name="location" size={24} color="black" />
+
   }}
   />
-  <Tabs.Screen name="mytrip"/>
+  <Tabs.Screen name="mytrip"
+  options={{
+    tabBarIcon:({color})=><EvilIcons name="location" size={24} color="black" />
+  }}
+  />
   <Tabs.Screen name="discover"/>
   <Tabs.Screen name="profile"/>
   
