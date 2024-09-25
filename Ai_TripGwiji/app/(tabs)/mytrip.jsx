@@ -8,7 +8,8 @@ export default function MyTrip() {
     style={{
       padding:25,
       paddingTop:55,
-      backgroundColor:Colors.WHITE
+      backgroundColor:Colors.WHITE,
+      height:'100%'
     }}
     >
     <View>
