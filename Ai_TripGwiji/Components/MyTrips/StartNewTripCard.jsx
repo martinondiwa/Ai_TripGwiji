@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import Entypo from '@expo/vector-icons/Entypo';
+import { Colors } from '../../constants/Colors';
 
 export default function StartNewTripCard() {
   return (
@@ -27,7 +28,8 @@ export default function StartNewTripCard() {
       style={{
         fontSize:20,
         fontFamily:'outfit',
-        textAlign:'center'
+        textAlign:'center',
+        color:Colors.GRAY
        
       }}
       >Looks like it's time to plan a new travel experience! Get Started below</Text>
