@@ -43,7 +43,11 @@ export default function StartNewTripCard() {
         paddingHorizontal:30
       }}
       >
-       <Text>Start a New Trip</Text>
+       <Text 
+       style={{
+        color:Colors.WHITE
+       }}
+       >Start a New Trip</Text>
       </TouchableOpacity>
       
     </View>
