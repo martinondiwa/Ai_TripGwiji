@@ -9,12 +9,19 @@ export default function StartNewTripCard() {
         padding:20,
         marginTop:50,
         display:'flex',
-        alignItems:'center'
+        alignItems:'center',
+        gap:20
     }}
     >
       
       <Entypo name="location" size={40} color="black" />
-      <Text>No trip planned yet</Text>
+      <Text
+      style={{
+        fontSize:25,
+        fontFamily:'outfit-medium',
+        marginTop:10
+      }}
+      >No trip planned yet</Text>
     </View>
   )
 }
