@@ -4,7 +4,14 @@ import Entypo from '@expo/vector-icons/Entypo';
 
 export default function StartNewTripCard() {
   return (
-    <View>
+    <View
+    style={{
+        padding:20,
+        marginTop:50,
+        display:'flex',
+        alignItems:'center'
+    }}
+    >
       <Text>StartNewTripCard</Text>
       <Entypo name="location" size={24} color="black" />
     </View>
