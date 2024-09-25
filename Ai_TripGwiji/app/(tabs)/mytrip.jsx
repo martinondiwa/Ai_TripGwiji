@@ -13,7 +13,12 @@ export default function MyTrip() {
     }}
     >
     <View>
-    <Text>MyTrip</Text>
+    <Text
+    style={{
+      fontFamily:'outfit-bold',
+      fontSize:30
+    }}
+    >MyTrip</Text>
   </View>
     </View>
   )
