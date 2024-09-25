@@ -20,7 +20,7 @@ export default function MyTrip() {
       fontSize:35
     }}
     >My Trips</Text>
-    <Ionicons name="add-circle-outline" size={24} color="black" />
+    <Ionicons name="add-circle-outline" size={50} color="black" />
   </View>
     </View>
   )
