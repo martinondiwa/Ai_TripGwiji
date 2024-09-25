@@ -35,7 +35,14 @@ export default function StartNewTripCard() {
       }}
       >Looks like it's time to plan a new travel experience! Get Started below</Text>
 
-      <TouchableOpacity>
+      <TouchableOpacity 
+      style={{
+        padding:10,
+        backgroundColor:Colors.PRIMARY,
+        borderRadius:15,
+        paddingHorizontal:30
+      }}
+      >
        <Text>Start a New Trip</Text>
       </TouchableOpacity>
       
