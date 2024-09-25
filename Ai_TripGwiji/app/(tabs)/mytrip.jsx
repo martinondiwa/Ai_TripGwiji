@@ -16,9 +16,9 @@ export default function MyTrip() {
     <Text
     style={{
       fontFamily:'outfit-bold',
-      fontSize:30
+      fontSize:35
     }}
-    >MyTrip</Text>
+    >My Trips</Text>
   </View>
     </View>
   )
