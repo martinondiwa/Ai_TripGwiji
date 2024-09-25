@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { Colors } from '../../constants/Colors'
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function MyTrip() {
   return (
@@ -19,6 +20,7 @@ export default function MyTrip() {
       fontSize:35
     }}
     >My Trips</Text>
+    <Ionicons name="add-circle-outline" size={24} color="black" />
   </View>
     </View>
   )
