@@ -45,7 +45,9 @@ export default function StartNewTripCard() {
       >
        <Text 
        style={{
-        color:Colors.WHITE
+        color:Colors.WHITE,
+        fontFamily:'outfit-medium',
+        fontSize:17
        }}
        >Start a New Trip</Text>
       </TouchableOpacity>
