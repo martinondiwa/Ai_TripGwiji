@@ -26,7 +26,8 @@ export default function StartNewTripCard() {
       <Text
       style={{
         fontSize:20,
-        fontFamily:'outfit'
+        fontFamily:'outfit',
+        textAlign:'center'
        
       }}
       >Looks like it's time to plan a new travel experience! Get Started below</Text>
