@@ -12,7 +12,7 @@ export default function StartNewTripCard() {
         marginTop:50,
         display:'flex',
         alignItems:'center',
-        gap:20
+        gap:25
     }}
     >
       
