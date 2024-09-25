@@ -18,10 +18,19 @@ export default function StartNewTripCard() {
       <Text
       style={{
         fontSize:25,
-        fontFamily:'outfit-medium',
-        marginTop:10
+        fontFamily:'outfit-medium'
+       
       }}
       >No trip planned yet</Text>
+
+      <Text
+      style={{
+        fontSize:20,
+        fontFamily:'outfit'
+       
+      }}
+      >Looks like it's time to plan a new travel experience! Get Started below</Text>
+      
     </View>
   )
 }
