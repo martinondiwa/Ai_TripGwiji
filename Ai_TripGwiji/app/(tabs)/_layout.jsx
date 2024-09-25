@@ -4,6 +4,7 @@ import {Tabs} from 'expo-router'
 import EvilIcons from '@expo/vector-icons/EvilIcons';
 import {Colors} from './../../constants/Colors'
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 
 export default function TabLayout() {
@@ -32,7 +33,7 @@ export default function TabLayout() {
   <Tabs.Screen name="profile"
   options={{
     tabBarLabel:'Profile',
-    tabBarIcon:({color})=><EvilIcons name="location" size={24} color={color} />
+    tabBarIcon:({color})=><FontAwesome6 name="people-pulling" size={24} color={color} />
   }}
   />
   
