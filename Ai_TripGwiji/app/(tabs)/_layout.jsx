@@ -3,6 +3,7 @@ import React from 'react'
 import {Tabs} from 'expo-router'
 import EvilIcons from '@expo/vector-icons/EvilIcons';
 import {Colors} from './../../constants/Colors'
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 
 export default function TabLayout() {
@@ -25,7 +26,7 @@ export default function TabLayout() {
   <Tabs.Screen name="discover"
   options={{
     tabBarLabel:'Discover',
-    tabBarIcon:({color})=><EvilIcons name="location" size={24} color={color} />
+    tabBarIcon:({color})=><FontAwesome5 name="globe-africa" size={24} color={color} />
   }}
   />
   <Tabs.Screen name="profile"
