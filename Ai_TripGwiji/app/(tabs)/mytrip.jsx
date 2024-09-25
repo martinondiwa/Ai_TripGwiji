@@ -13,7 +13,14 @@ export default function MyTrip() {
       height:'100%'
     }}
     >
-    <View>
+    <View
+    style={{
+      display:'flex',
+      flexDirection:'row',
+      alignContent:'center',
+      justifyContent:'space-between'
+    }} 
+    >
     <Text
     style={{
       fontFamily:'outfit-bold',
