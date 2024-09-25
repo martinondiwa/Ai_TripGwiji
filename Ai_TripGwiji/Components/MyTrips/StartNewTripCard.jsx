@@ -12,8 +12,9 @@ export default function StartNewTripCard() {
         alignItems:'center'
     }}
     >
-      <Text>StartNewTripCard</Text>
-      <Entypo name="location" size={24} color="black" />
+      
+      <Entypo name="location" size={40} color="black" />
+      <Text>No trip planned yet</Text>
     </View>
   )
 }
