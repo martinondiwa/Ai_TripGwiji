@@ -5,7 +5,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function MyTrip() {
 
-  const [userTrips,setUserTrips]=useState();
+  const [userTrips,setUserTrips]=useState([]);
 
   return (
     <View 
