@@ -12,9 +12,10 @@ export default function TabLayout() {
     <EvilIcons name="location" size={24} color="black" />
   }}
   />
+  <Tabs.Screen name="mytrip"/>
   <Tabs.Screen name="discover"/>
   <Tabs.Screen name="profile"/>
-  <Tabs.Screen name="mytrip"/>
+  
 </Tabs>
   )
 }
