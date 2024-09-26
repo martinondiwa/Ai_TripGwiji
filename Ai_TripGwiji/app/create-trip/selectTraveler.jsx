@@ -10,6 +10,7 @@ export default function selectTraveler() {
       navigation.setOptions({
         headerShown:true,
         headerTransparent:true,
+        headerTitle: ''
       })
     },[])
   return (
