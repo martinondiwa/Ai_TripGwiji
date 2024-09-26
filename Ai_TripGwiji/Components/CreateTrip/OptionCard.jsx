@@ -5,15 +5,17 @@ import { Colors } from "../../constants/Colors";
 export default function OptionCard({ option,selectedTraveler }) {
   return (
     <View
-      style={{
-        padding: 25,
-        display:'flex',
-        flexDirection:'row',
-        justifyContent:'space-between',
-        backgroundColor:Colors.WHITE,
-        borderRadius:15
-        
-      }}
+      style={[
+        {
+            padding: 25,
+            display:'flex',
+            flexDirection:'row',
+            justifyContent:'space-between',
+            backgroundColor:Colors.WHITE,
+            borderRadius:15
+            
+          }
+      ]}
     >
       <View>
         <Text
