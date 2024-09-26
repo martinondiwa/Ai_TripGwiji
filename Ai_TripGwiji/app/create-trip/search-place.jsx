@@ -39,6 +39,7 @@ export default function SearchPlace() {
       setTripData({
         locationInfo:{
             name:data.description,
+            coordinates:details?.geometry.location,
         }
       })
     }}
