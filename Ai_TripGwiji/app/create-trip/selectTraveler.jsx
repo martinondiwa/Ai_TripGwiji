@@ -40,7 +40,7 @@ export default function selectTraveler() {
        }}> Choose Your Travellers</Text>
        <FlatList
        data={SelectTravelesList}
-       renderItem={(item,index)=>(
+       renderItem={({item,index})=>(
         <View>
         <OptionCard option={item}/>
         </View>
