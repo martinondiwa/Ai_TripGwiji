@@ -71,7 +71,8 @@ export default function selectTraveler() {
       <TouchableOpacity
       style={{
         padding: 15,
-        backgroundColor: Colors.PRIMARY
+        backgroundColor: Colors.PRIMARY,
+        borderRadius:15
         
       }} 
       >
