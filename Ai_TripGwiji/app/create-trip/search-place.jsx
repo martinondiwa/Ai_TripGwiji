@@ -6,7 +6,14 @@ export default function SearchPlace() {
 
     const navigation=useNavigation();
     
-    useEffect(()=>)
+    useEffect(()=>{
+
+        navigation.setOptions({
+            headershown:true,
+            headerTransparent: true,
+        })
+    },[])
+    
   return (
     <View>
       <Text>Search Place</Text> 
