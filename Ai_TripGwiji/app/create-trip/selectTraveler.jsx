@@ -72,7 +72,8 @@ export default function selectTraveler() {
       style={{
         padding: 15,
         backgroundColor: Colors.PRIMARY,
-        borderRadius:15
+        borderRadius:15,
+        marginTop:20
         
       }} 
       >
