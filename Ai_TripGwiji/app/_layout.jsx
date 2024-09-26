@@ -1,9 +1,9 @@
 import { Text, View } from "react-native";
-import Login from './../Components/Login';
-import { auth } from './../configs/FirebaseConfig';
+import Login from '../Components/Login';
+import { auth } from '../configs/FirebaseConfig';
 import { Redirect, Stack } from "expo-router";
-import {CreateTripContext} from  './../context/CreateTripContext'
-
+import {CreateTripContext} from  '../context/CreateTripContext'
+import { useState } from "react";
 
 export default function RootLayout() {
  
