@@ -23,7 +23,7 @@ export default function selectTraveler() {
         height:'100%'
     }}
     >
-      <Text>selectTraveler</Text>
+      <Text>Who's Travelling?</Text>
     </View>
   )
 }
