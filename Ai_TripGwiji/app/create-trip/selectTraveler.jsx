@@ -4,7 +4,10 @@ import React, { useEffect } from 'react'
 export default function selectTraveler() {
 
     useEffect(()=>{
-
+      navigation.setOptions({
+        headerShown:true,
+        headerTransparent:true,
+      })
     },[])
   return (
     <View>
