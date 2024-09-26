@@ -50,6 +50,7 @@ export default function SearchPlace() {
             url:details?.url
         }
       })
+      router.push('create-trip/selectTraveler')
     }}
     query={{
       key: process.env.XP_GOOGLE_PLACE_API_KEY,
