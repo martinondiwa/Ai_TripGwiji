@@ -20,8 +20,8 @@ export default function OptionCard({ option }) {
       <Text
         style={{
           fontSize: 17,
-          fontFamily: 'outfit-bold',
-        }}>{option?.title} </Text>
+          fontFamily: 'outfit',
+        }}>{option?.desc} </Text>
 
     </View>
 
