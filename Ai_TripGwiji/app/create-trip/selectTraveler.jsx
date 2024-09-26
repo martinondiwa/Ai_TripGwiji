@@ -39,7 +39,7 @@ export default function selectTraveler() {
         fontSize:23
        }}> Choose Your Travellers</Text>
        <FlatList
-       data={{SelectTravelesList}}
+       data={SelectTravelesList}
        renderItem={(item,index)=>(
         <View>
         <OptionCard option={item}/>
