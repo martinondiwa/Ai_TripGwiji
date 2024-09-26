@@ -27,6 +27,7 @@ export default function SearchPlace() {
     }}>
     <GooglePlacesAutocomplete
     placeholder='Search'
+    fetchDetails={true}
     onPress={(data, details = null) => {
       // 'details' is provided when fetchDetails = true
       console.log(data, details);
