@@ -19,7 +19,8 @@ export default function selectTraveler() {
     style={{
         padding:25,
         paddingTop:75,
-        backgroundColor:Colors.GRAY
+        backgroundColor:Colors.GRAY,
+        height:'100%'
     }}
     >
       <Text>selectTraveler</Text>
