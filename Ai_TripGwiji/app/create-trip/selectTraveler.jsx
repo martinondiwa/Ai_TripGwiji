@@ -4,6 +4,7 @@ import { useNavigation} from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import { FlatList } from 'react-native';
 import { SelectTravelesList } from '../../constants/Options';
+import OptionCard from '../../Components/CreateTrip/OptionCard';
 export default function selectTraveler() {
 
     const navigation=useNavigation();
@@ -41,6 +42,7 @@ export default function selectTraveler() {
        data={{SelectTravelesList}}
        renderItem={(item,index)=>(
         <View>
+        <OptionCard option={}/>
         </View>
        )}
        />
