@@ -40,6 +40,8 @@ export default function SearchPlace() {
         locationInfo:{
             name:data.description,
             coordinates:details?.geometry.location,
+            photoRef:details?.photos[0]?.photo_reference,
+            url:details?.url
         }
       })
     }}
