@@ -31,13 +31,7 @@ export default function SearchPlace() {
         height: "100%",
       }}
     >
-      <View
-        styles={{
-          borderWidth: 1,
-          borderRadius: 5,
-          marginTop: 25,
-        }}
-      >
+    
         <GooglePlacesAutocomplete
           placeholder="Search place"
           fetchDetails={true}
@@ -59,11 +53,17 @@ export default function SearchPlace() {
             router.push("create-trip/selectTraveler");
           }}
           query={{
-            key: process.env.XP_GOOGLE_PLACE_API_KEY,
+            key: process.env.EXPO_PUBLIC_GOOGLE_MAP_KEY,
             language: "en",
           }}
+
+          Styles={{
+            borderWidth: 1,
+            borderRadius: 5,
+            marginTop: 25,
+          }}
         />
-      </View>
+   
     </View>
   );
 }
