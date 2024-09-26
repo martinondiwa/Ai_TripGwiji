@@ -31,6 +31,8 @@ export default function SearchPlace() {
     onPress={(data, details = null) => {
       // 'details' is provided when fetchDetails = true
       console.log(data.description);
+      console.log(details?.geometry.location);
+      console.log(details?.photos[0]?.photo_reference);
     }}
     query={{
       key: process.env.EXPO_PUBLIC_GOOGLE_MAP_KEY,
