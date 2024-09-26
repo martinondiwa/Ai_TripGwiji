@@ -12,7 +12,7 @@ export default function RootLayout() {
     'outfit-medium':require('./../assets/fonts/Outfit-Medium.ttf'),
     'outfit-bold':require('./../assets/fonts/Outfit-Bold.ttf'),
   })
-  const user = auth.currentUser;
+  const [tripData,setTripData]=useState([]);
 
   return (
     <CreateTripContext.Provider value={{}}>
