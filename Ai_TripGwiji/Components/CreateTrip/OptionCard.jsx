@@ -14,8 +14,7 @@ export default function OptionCard({ option,selectedTraveler }) {
             backgroundColor:Colors.WHITE,
             borderRadius:15
             
-          }
-      ], selectedTraveler==option.title&&{borderWidth:2}}
+          },selectedTraveler==option.title&&{borderWidth:2}]}
     >
       <View>
         <Text
