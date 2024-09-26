@@ -30,8 +30,8 @@ export default function selectTraveler() {
         })
     },[selectedTraveler]);
     useEffect(()=>{
-        console.log(tripData)
-    })
+        console.log(tripData);
+    }, tripData)
   return (
     <View
     style={{
