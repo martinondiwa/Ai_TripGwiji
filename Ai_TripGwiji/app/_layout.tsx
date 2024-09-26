@@ -8,12 +8,13 @@ export default function RootLayout() {
   const user = auth.currentUser;
 
   return (
-    <CreatTripContext
+    <CreatTripContext.provider>
     <Stack screenOptions={{
       headerShown: false
     }}>
       {/**<Stack.Screen name="index" options={{headerShown:false}}/>*/}
       <Stack.Screen name="(tabs)" />
     </Stack>
+    </CreatTripContext.provider>
   );
 }
