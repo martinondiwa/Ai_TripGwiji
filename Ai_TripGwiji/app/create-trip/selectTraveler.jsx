@@ -8,6 +8,7 @@ import OptionCard from '../../Components/CreateTrip/OptionCard';
 import { TouchableOpacity } from 'react-native';
 import { useContext } from 'react';
 import { CreateTripContext } from '../../context/CreateTripContext';
+import { Link } from '@react-navigation/native';
 
 
 export default function selectTraveler() {
@@ -68,7 +69,11 @@ export default function selectTraveler() {
        )}
        />
       </View>
+
+      <Link>
       <TouchableOpacity
+
+
       style={{
         padding: 15,
         backgroundColor: Colors.PRIMARY,
@@ -86,6 +91,7 @@ export default function selectTraveler() {
        }}
        >Continue</Text>
       </TouchableOpacity>
+      </Link>
     </View>
   )
 }
