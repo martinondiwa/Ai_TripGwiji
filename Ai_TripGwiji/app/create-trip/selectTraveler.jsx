@@ -39,6 +39,7 @@ export default function selectTraveler() {
        }}> Choose Your Travellers</Text>
        <FlatList
        data={{SelectTravelesList}}
+       renderItem={(item,index)=>}
        />
       </View>
     </View>
