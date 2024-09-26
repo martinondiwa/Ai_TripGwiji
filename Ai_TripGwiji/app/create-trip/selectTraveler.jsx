@@ -41,7 +41,11 @@ export default function selectTraveler() {
        <FlatList
        data={SelectTravelesList}
        renderItem={({item,index})=>(
-        <View>
+        <View 
+        style={{
+            marginVertical:10
+        }}
+        >
         <OptionCard option={item}/>
         </View>
        )}
