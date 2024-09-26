@@ -6,6 +6,8 @@ export default function OptionCard({ option }) {
     <View
       style={{
         padding: 25,
+        display:'flex',
+        flexDirection:'row',
       }}
     >
       <View>
