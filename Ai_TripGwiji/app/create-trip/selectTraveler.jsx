@@ -5,6 +5,9 @@ import { Colors } from '../../constants/Colors';
 import { FlatList } from 'react-native';
 import { SelectTravelesList } from '../../constants/Options';
 import OptionCard from '../../Components/CreateTrip/OptionCard';
+import { TouchableOpacity } from 'react-native';
+
+
 export default function selectTraveler() {
 
     const navigation=useNavigation();
