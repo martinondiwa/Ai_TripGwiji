@@ -55,7 +55,7 @@ export default function selectTraveler() {
        data={SelectTravelesList}
        renderItem={({item,index})=>(
         <TouchableOpacity 
-        onPress={()=>setSelectedTraveler(item.title)}
+        onPress={()=>setSelectedTraveler(item)}
         style={{
             marginVertical:10
         }}
