@@ -16,6 +16,23 @@ export default function OptionCard({ option }) {
           }}>{option?.title} </Text>
 
       </View>
+      <View>
+      <Text
+        style={{
+          fontSize: 20,
+          fontFamily: 'outfit-bold',
+        }}>{option?.title} </Text>
+
+    </View>
+
+    <View>
+    <Text
+      style={{
+        fontSize: 20,
+        fontFamily: 'outfit-bold',
+      }}>{option?.title} </Text>
+
+  </View>
     </View>
   );
 }
