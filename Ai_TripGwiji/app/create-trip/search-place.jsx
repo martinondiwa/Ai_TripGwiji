@@ -19,7 +19,7 @@ export default function SearchPlace() {
     },[])
 
     useEffect(()=>{
-        
+        console.log(tripData);
     }),[tripData]
 
   return (
