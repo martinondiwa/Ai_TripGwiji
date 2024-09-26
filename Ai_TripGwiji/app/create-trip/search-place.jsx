@@ -60,7 +60,7 @@ export default function SearchPlace() {
           style={{
           textInputContainer:{
             borderWidth: 1,
-            borderRadius: 5,
+            borderRadius:5,
             marginTop: 25,
           }
           }}
