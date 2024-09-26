@@ -18,6 +18,8 @@ export default function SearchPlace() {
         })
     },[navigation])
 
+    useEffect(())
+
   return (
     <View 
     style={{
