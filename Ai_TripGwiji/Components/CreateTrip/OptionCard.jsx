@@ -10,7 +10,8 @@ export default function OptionCard({ option }) {
         display:'flex',
         flexDirection:'row',
         justifyContent:'space-between',
-        backgroundColor:Colors.WHITE
+        backgroundColor:Colors.WHITE,
+        borderRadius:15
         
       }}
     >
