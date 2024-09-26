@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigation} from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import { FlatList } from 'react-native';
@@ -8,6 +8,8 @@ import OptionCard from '../../Components/CreateTrip/OptionCard';
 export default function selectTraveler() {
 
     const navigation=useNavigation();
+
+    const [selectedTraveler,setSelectedTraveler]=useState();
 
     useEffect(()=>{
       navigation.setOptions({
