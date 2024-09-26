@@ -4,6 +4,7 @@ import { useNavigation, useRouter } from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import {CreateTripContext} from './../../context/CreateTripContext'
+
 export default function SearchPlace() {
 
     const navigation=useNavigation();
