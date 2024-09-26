@@ -55,6 +55,11 @@ export default function SearchPlace() {
       key: process.env.XP_GOOGLE_PLACE_API_KEY,
       language: 'en',
     }}
+
+    styles={{
+        borderWidth:1,
+        borderRadius:5,
+    }}
   />
     </View>
   )
