@@ -70,7 +70,7 @@ export default function selectTraveler() {
        />
       </View>
 
-      <Link>
+      <Link href={'/create-trip/select-dates'}>
       <TouchableOpacity
 
 
