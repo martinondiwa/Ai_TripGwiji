@@ -1,12 +1,13 @@
 import { View, Text } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useNavigation } from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
-
+import 
 export default function SearchPlace() {
 
     const navigation=useNavigation();
+    const {tripData,setTripData}=useContext(CreateTripContext)
     
     useEffect(()=>{
 
