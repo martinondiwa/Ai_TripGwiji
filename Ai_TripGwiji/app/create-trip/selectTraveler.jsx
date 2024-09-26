@@ -73,7 +73,7 @@ export default function selectTraveler() {
         padding: 15,
         backgroundColor: Colors.PRIMARY,
         borderRadius:15,
-        marginTop:20
+        marginTop:13
         
       }} 
       >
