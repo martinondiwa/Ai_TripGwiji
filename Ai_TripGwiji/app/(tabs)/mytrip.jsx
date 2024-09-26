@@ -39,5 +39,5 @@ export default function MyTrip() {
         <StartNewTripCard/>:null
       }
     </View>
-  );
+  )
 }
