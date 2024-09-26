@@ -30,7 +30,7 @@ export default function SearchPlace() {
     fetchDetails={true}
     onPress={(data, details = null) => {
       // 'details' is provided when fetchDetails = true
-      console.log(data, details);
+      console.log(data.description);
     }}
     query={{
       key: process.env.EXPO_PUBLIC_GOOGLE_MAP_KEY,
