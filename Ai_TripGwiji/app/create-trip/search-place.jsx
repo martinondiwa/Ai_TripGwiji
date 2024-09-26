@@ -46,7 +46,7 @@ export default function SearchPlace() {
       })
     }}
     query={{
-      key: process.env.EXPO_PUBLIC_GOOGLE_MAP_KEY,
+      key: process.env.XP_GOOGLE_PLACE_API_KEY,
       language: 'en',
     }}
   />
