@@ -8,6 +8,7 @@ export default function OptionCard({ option }) {
         padding: 25,
         display:'flex',
         flexDirection:'row',
+        justifyContent:'space-between'
       }}
     >
       <View>
