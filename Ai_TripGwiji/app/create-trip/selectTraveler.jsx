@@ -28,7 +28,10 @@ export default function selectTraveler() {
             travelerCount:selectedTraveler
 
         })
-    },[selectedTraveler])
+    },[selectedTraveler]);
+    useEffect(()=>{
+        
+    })
   return (
     <View
     style={{
