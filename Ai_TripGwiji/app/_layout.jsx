@@ -4,6 +4,7 @@ import { auth } from '../configs/FirebaseConfig';
 import { Redirect, Stack } from "expo-router";
 import {CreateTripContext} from  '../context/CreateTripContext'
 import { useState } from "react";
+import {useFonts}  from 'expo-font'
 
 export default function RootLayout() {
  
