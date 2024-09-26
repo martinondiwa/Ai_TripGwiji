@@ -34,7 +34,11 @@ export default function SearchPlace() {
       console.log(data.description);
       console.log(details?.geometry.location);
       console.log(details?.photos[0]?.photo_reference);
-      console.log(details?.url)
+      console.log(details?.url);
+
+      setTripData({
+        
+      })
     }}
     query={{
       key: process.env.EXPO_PUBLIC_GOOGLE_MAP_KEY,
