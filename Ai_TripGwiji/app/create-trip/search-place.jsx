@@ -37,7 +37,9 @@ export default function SearchPlace() {
       console.log(details?.url);
 
       setTripData({
-        
+        locationInfo:{
+            name:data.description,
+        }
       })
     }}
     query={{
