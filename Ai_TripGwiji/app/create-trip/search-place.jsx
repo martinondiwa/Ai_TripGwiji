@@ -33,14 +33,11 @@ export default function SearchPlace() {
 
     
     <GooglePlacesAutocomplete
-    placeholder='Search'
+    placeholder='Search Place'
     fetchDetails={true}
     onPress={(data, details = null) => {
       // 'details' is provided when fetchDetails = true
-      console.log(data.description);
-      console.log(details?.geometry.location);
-      console.log(details?.photos[0]?.photo_reference);
-      console.log(details?.url);
+     
 
       setTripData({
         locationInfo:{
@@ -59,6 +56,7 @@ export default function SearchPlace() {
     styles={{
         borderWidth:1,
         borderRadius:5,
+        marginTop:25
     }}
   />
     </View>
