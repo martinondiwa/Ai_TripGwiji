@@ -43,13 +43,13 @@ export default function selectTraveler() {
        <FlatList
        data={SelectTravelesList}
        renderItem={({item,index})=>(
-        <View 
+        <TouchabbleOpacity 
         style={{
             marginVertical:10
         }}
         >
         <OptionCard option={item}/>
-        </View>
+        </TouchabbleOpacity>
        )}
        />
       </View>
