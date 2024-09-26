@@ -9,7 +9,11 @@ export default function OptionCard({option}) {
     }}
     >
        <View>
-       <Text>OptionCard</Text>
+       <Text
+       style={{
+        fontSize:20,
+        fontFamily:'outfit-bold'
+       }}>OptionCard</Text>
        </View>
     </View>
   )
