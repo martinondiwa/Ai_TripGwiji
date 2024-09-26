@@ -3,8 +3,13 @@ import Login from './../Components/Login';
 import { auth } from './../configs/FirebaseConfig';
 import { Redirect, Stack } from "expo-router";
 import {CreateTripContext} from  './../context/CreateTripContext'
+
+
 export default function RootLayout() {
-  // Remove the erroneous object and extra parenthesis
+ 
+  useFonts({
+    'outfit':require('./../assets/fonts/Outfit-Regular.ttf'),
+  })
   const user = auth.currentUser;
 
   return (
