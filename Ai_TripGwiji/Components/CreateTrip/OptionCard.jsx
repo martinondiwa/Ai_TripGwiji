@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 import { Colors } from "../../constants/Colors";
 
-export default function OptionCard({ option }) {
+export default function OptionCard({ option,selectedTraveler }) {
   return (
     <View
       style={{
