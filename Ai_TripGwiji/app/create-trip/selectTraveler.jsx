@@ -75,7 +75,12 @@ export default function selectTraveler() {
         
       }} 
       >
-       <Text>Continue</Text>
+       <Text 
+       style={{
+        textAlign:'center',
+        color:Colors.WHITE
+       }}
+       >Continue</Text>
       </TouchableOpacity>
     </View>
   )
