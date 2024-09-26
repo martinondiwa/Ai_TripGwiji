@@ -15,7 +15,7 @@ export default function OptionCard({ option,selectedTraveler }) {
             borderRadius:15
             
           }
-      ]}
+      ], selectedTraveler==option.title}
     >
       <View>
         <Text
