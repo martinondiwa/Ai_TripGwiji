@@ -2,7 +2,7 @@ import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from 'expo-router'
 import { Colors } from '../../constants/Colors';
-
+import {g}
 export default function SearchPlace() {
 
     const navigation=useNavigation();
@@ -24,7 +24,17 @@ export default function SearchPlace() {
         backgroundColor:Colors.WHITE,
         height:'100%'
     }}>
-      <Text>Search Place</Text> 
+    <GooglePlacesAutocomplete
+    placeholder='Search'
+    onPress={(data, details = null) => {
+      // 'details' is provided when fetchDetails = true
+      console.log(data, details);
+    }}
+    query={{
+      key: 'YOUR API KEY',
+      language: 'en',
+    }}
+  />
     </View>
   )
 }
