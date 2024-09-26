@@ -13,7 +13,7 @@ export default function SearchPlace() {
     navigation.setOptions({
       headerShown: true,
       headerTransparent: true,
-      headerTitle: "Search Place",
+      headerTitle: "Search",
     });
   }, []);
 
@@ -39,7 +39,7 @@ export default function SearchPlace() {
         }}
       >
         <GooglePlacesAutocomplete
-          placeholder="Search"
+          placeholder="Search place"
           fetchDetails={true}
           onPress={(data, details = null) => {
             // 'details' is provided when fetchDetails = true
