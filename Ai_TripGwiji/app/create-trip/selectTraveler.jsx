@@ -23,7 +23,11 @@ export default function selectTraveler() {
         height:'100%'
     }}
     >
-      <Text>Who's Travelling?</Text>
+      <Text style={{
+        fontSize:35,
+        fontFamily:'outfit-bold',
+        marginTop:20
+      }}>Who's Travelling?</Text>
     </View>
   )
 }
