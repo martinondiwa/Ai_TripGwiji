@@ -82,7 +82,7 @@ export default function selectTraveler() {
         textAlign:'center',
         color:Colors.WHITE,
         fontFamily:'outfit-medium',
-        fontSize:20
+       
        }}
        >Continue</Text>
       </TouchableOpacity>
