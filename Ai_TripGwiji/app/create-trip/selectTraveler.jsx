@@ -28,6 +28,14 @@ export default function selectTraveler() {
         fontFamily:'outfit-bold',
         marginTop:20
       }}>Who's Travelling?</Text>
+
+      <View style={{
+        marginTop:20
+      }}>
+       <Text style={{
+        
+       }}> Choose Your Travellers</Text>
+      </View>
     </View>
   )
 }
