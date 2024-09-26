@@ -25,7 +25,7 @@ export default function selectTraveler() {
     },[])
     useEffect(()=>{
         setTripData({...tripData,
-            travelerCount:selectedTraveler
+            traveler:selectedTraveler
 
         })
     },[selectedTraveler]);
