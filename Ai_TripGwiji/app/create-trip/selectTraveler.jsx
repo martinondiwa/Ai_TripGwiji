@@ -6,13 +6,15 @@ import { FlatList } from 'react-native';
 import { SelectTravelesList } from '../../constants/Options';
 import OptionCard from '../../Components/CreateTrip/OptionCard';
 import { TouchableOpacity } from 'react-native';
+import { useContext } from 'react';
+import { CreateTripContext } from '../../context/CreateTripContext';
 
 
 export default function selectTraveler() {
 
     const navigation=useNavigation();
-
     const [selectedTraveler,setSelectedTraveler]=useState();
+    const {tripData,setTripData}=useContext(CreateTripContext);
 
     useEffect(()=>{
       navigation.setOptions({
