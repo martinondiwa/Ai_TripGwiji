@@ -10,11 +10,11 @@ export default function SearchPlace() {
     useEffect(()=>{
 
         navigation.setOptions({
-            headershown:true,
+            headerShown:true,
             headerTransparent: true,
             headerTitle: 'Search'
         })
-    },[])
+    },[navigation])
 
   return (
     <View 
