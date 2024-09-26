@@ -11,9 +11,10 @@ export default function SearchPlace() {
         navigation.setOptions({
             headershown:true,
             headerTransparent: true,
+            headerTitle: 'Search'
         })
     },[])
-    
+
   return (
     <View>
       <Text>Search Place</Text> 
