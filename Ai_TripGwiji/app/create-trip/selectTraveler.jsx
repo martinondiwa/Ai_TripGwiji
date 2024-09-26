@@ -68,6 +68,9 @@ export default function selectTraveler() {
        )}
        />
       </View>
+      <TouchableOpacity>
+       <Text></Text>
+      </TouchableOpacity>
     </View>
   )
 }
