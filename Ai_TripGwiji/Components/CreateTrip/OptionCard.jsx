@@ -12,11 +12,9 @@ export default function OptionCard({ option }) {
         <Text
           style={{
             fontSize: 20,
-            fontFamily: "outfit-bold",
-          }}
-        >
-          {option?.title}
-        </Text>
+            fontFamily: 'outfit-bold',
+          }}>{option?.title} </Text>
+
       </View>
     </View>
   );
