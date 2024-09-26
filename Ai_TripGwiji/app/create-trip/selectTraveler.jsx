@@ -34,7 +34,7 @@ export default function selectTraveler() {
       }}>
        <Text style={{
         fontFamily:'outfit-bold',
-        fontSize:20
+        fontSize:23
        }}> Choose Your Travellers</Text>
       </View>
     </View>
