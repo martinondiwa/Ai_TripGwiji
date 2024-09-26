@@ -2,6 +2,7 @@ import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation} from 'expo-router'
 import { Colors } from '../../constants/Colors';
+import { FlatList } from 'react-native';
 
 export default function selectTraveler() {
 
@@ -36,6 +37,9 @@ export default function selectTraveler() {
         fontFamily:'outfit-bold',
         fontSize:23
        }}> Choose Your Travellers</Text>
+       <FlatList
+       data={{}}
+       />
       </View>
     </View>
   )
