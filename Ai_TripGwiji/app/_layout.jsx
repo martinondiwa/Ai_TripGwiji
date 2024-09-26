@@ -15,7 +15,7 @@ export default function RootLayout() {
   const [tripData,setTripData]=useState([]);
 
   return (
-    <CreateTripContext.Provider value={{}}>
+    <CreateTripContext.Provider value={{tripData,setTripData}}>
     <Stack screenOptions={{
       headerShown: false
     }}>
