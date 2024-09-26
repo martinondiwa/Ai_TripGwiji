@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
+import { Colors } from "../../constants/Colors";
 
 export default function OptionCard({ option }) {
   return (
@@ -8,7 +9,8 @@ export default function OptionCard({ option }) {
         padding: 25,
         display:'flex',
         flexDirection:'row',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        backgroundColor:Colors.WHITE
       }}
     >
       <View>
