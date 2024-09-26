@@ -57,7 +57,7 @@ export default function SearchPlace() {
             language: "en",
           }}
 
-          Styles={{
+          style={{
             borderWidth: 1,
             borderRadius: 5,
             marginTop: 25,
