@@ -42,7 +42,7 @@ export default function selectTraveler() {
        data={{SelectTravelesList}}
        renderItem={(item,index)=>(
         <View>
-        <OptionCard option={}/>
+        <OptionCard option={item}/>
         </View>
        )}
        />
