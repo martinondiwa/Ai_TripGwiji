@@ -14,7 +14,7 @@ export default function SearchPlace() {
         navigation.setOptions({
             headerShown:true,
             headerTransparent: true,
-            headerTitle: 'Search'
+            headerTitle: 'Search Place'
         })
     },[navigation])
 
