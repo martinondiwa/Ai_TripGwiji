@@ -16,9 +16,11 @@ export default function SearchPlace() {
             headerTransparent: true,
             headerTitle: 'Search Place'
         })
-    },[navigation])
+    },[])
 
-    useEffect(())
+    useEffect(()=>{
+        
+    }),[tripData]
 
   return (
     <View 
