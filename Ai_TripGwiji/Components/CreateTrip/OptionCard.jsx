@@ -21,6 +21,7 @@ export default function OptionCard({ option }) {
         style={{
           fontSize: 17,
           fontFamily: 'outfit',
+          color:'#660C00'
         }}>{option?.desc} </Text>
 
     </View>
