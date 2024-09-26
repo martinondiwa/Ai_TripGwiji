@@ -31,7 +31,7 @@ export default function SearchPlace() {
       console.log(data, details);
     }}
     query={{
-      key: 'YOUR API KEY',
+      key: process.env.EXPO_PUBLIC_GOOGLE_MAP_KEY,
       language: 'en',
     }}
   />
