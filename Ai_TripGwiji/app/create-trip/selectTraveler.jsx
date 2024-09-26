@@ -81,7 +81,7 @@ export default function selectTraveler() {
        style={{
         textAlign:'center',
         color:Colors.WHITE,
-        fontFamily:'outfit-medium',
+        fontFamily:'outfit-medium'
        
        }}
        >Continue</Text>
