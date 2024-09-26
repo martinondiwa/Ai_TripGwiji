@@ -28,7 +28,7 @@ export default function selectTraveler() {
             travelerCount:selectedTraveler
 
         })
-    })
+    },[])
   return (
     <View
     style={{
