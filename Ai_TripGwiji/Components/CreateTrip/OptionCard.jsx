@@ -20,7 +20,9 @@ export default function OptionCard({ option }) {
             fontFamily: "outfit",
             color: "#660C00"}} > {option?.desc} </Text>
       </View>
-        <Text>{option?.icon}</Text>
+        <Text
+        style={{fontSize:40}}
+        >{option?.icon}</Text>
     </View>
   );
 }
