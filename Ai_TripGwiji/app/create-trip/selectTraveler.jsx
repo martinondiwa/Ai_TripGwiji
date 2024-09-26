@@ -23,6 +23,9 @@ export default function selectTraveler() {
         headerTitle: ''
       })
     },[])
+    useEffect(()=>{
+        
+    })
   return (
     <View
     style={{
