@@ -80,7 +80,9 @@ export default function selectTraveler() {
        <Text 
        style={{
         textAlign:'center',
-        color:Colors.WHITE
+        color:Colors.WHITE,
+        fontFamily:'outfit-medium',
+        fontSize:20
        }}
        >Continue</Text>
       </TouchableOpacity>
