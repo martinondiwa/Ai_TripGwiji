@@ -33,7 +33,8 @@ export default function selectTraveler() {
         marginTop:20
       }}>
        <Text style={{
-        
+        fontFamily:'outfit-bold',
+        fontSize:20
        }}> Choose Your Travellers</Text>
       </View>
     </View>
