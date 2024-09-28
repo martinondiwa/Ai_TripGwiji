@@ -33,7 +33,7 @@ export default function SelectBudget() {
 
         if(!selectedOption)
         {
-            ToastAndroid.show('Select Your Budget', ToastAndroid.BOTTOM)
+            ToastAndroid.show('Select Your Budget', ToastAndroid.LONG);
             return;
         }
 
