@@ -18,7 +18,16 @@ export default function GenerateTrip() {
         fontSize:35,
         textAlign:'center'
       }}
+      >Please Wait.....</Text>
+
+      <Text
+      style={{
+        fontFamily:'outfit-bold',
+        fontSize:35,
+        textAlign:'center'
+      }}
       >generate-trip</Text>
+
     </View>
   )
 }
