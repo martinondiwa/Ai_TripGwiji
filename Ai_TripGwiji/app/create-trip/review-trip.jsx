@@ -194,7 +194,7 @@ export default function ReviewTrip() {
         <View>
        <TouchableOpacity
 
-      onPress={()=>onClickContinue()}
+      onPress={()=>router.push('/create-trip/generate-trip')}
        
        style={{
          padding:15,
