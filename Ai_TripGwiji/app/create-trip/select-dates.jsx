@@ -41,6 +41,7 @@ export default function SelectDates() {
         <CalendarPicker onDateChange={this.onDateChange} 
         allowRangeSelection={true}
         minDate={new Date}
+        maxRangeDuration={20}
         />
       </View>
     </View>
