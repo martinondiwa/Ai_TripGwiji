@@ -52,7 +52,7 @@ export default function ReviewTrip() {
      </View>
      <View>
      <Text>Destination</Text>
-     <Text>Destination</Text>
+     <Text>{tripData?.locationInfo?.name}</Text>
      </View>
      </View>
     </View>
