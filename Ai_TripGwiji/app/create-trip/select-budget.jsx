@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigation } from 'expo-router'
 import OptionCard from './../../Components/CreateTrip/OptionCard'
 
-export default function SelectBudget() {
+export default function SelectBudgetOptions() {
     const navigation=useNavigation();
 
     const [selectedOption,setSelectedOption]=useState();
