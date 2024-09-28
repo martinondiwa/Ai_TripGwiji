@@ -11,7 +11,7 @@ export default function GenerateTrip() {
     tripData&&GenerateAiTrip()
   },[tripData])
 
-  const GenerateAiTrip=()=>{
+  const GenerateAiTrip=async()=>{
      
     const FINAL_PROMT=AI_PROMT
     .replace('{location}',tripData?.locationInfo?.name)
