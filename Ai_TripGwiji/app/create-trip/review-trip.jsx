@@ -6,6 +6,7 @@ import EvilIcons from "@expo/vector-icons/EvilIcons";
 import { CreateTripContext } from "../../context/CreateTripContext";
 import moment from "moment";
 
+
 export default function ReviewTrip() {
   const navigation = useNavigation();
   const { tripData, setTripData } = useContext(CreateTripContext);
@@ -91,7 +92,7 @@ export default function ReviewTrip() {
             gap: 20,
           }}
         >
-          <EvilIcons name="location" size={34} color="black" />
+         <EvilIcons name="calendar" size={24} color="black" />
 
           <View>
             <Text
@@ -118,6 +119,42 @@ export default function ReviewTrip() {
           </View>
         </View>
 
+        
+        
+        <View
+          style={{
+            marginTop: 25,
+            display: "flex",
+            flexDirection: "row",
+            gap: 20,
+          }}
+        >
+          <EvilIcons name="location" size={34} color="black" />
+
+          <View>
+            <Text
+              style={{
+                fontFamily: "outfit-regular",
+                fontSize: 20,
+                color: "goldenbrown",
+              }}
+            >
+              Travel Date
+            </Text>
+            <Text
+              style={{
+                fontFamily: "outfit-medium",
+                fontSize: 20,
+              }}
+            >
+              {moment(tripData?.startDate).format('DD MMM') +"  "
+                +" To  "+ 
+                moment(tripData.endDate).format('DD MMM') +"  "}
+                ({tripData?.totalNoOfDays} days)
+                  
+            </Text>
+          </View>
+        </View>
 
       </View>
     </View>
