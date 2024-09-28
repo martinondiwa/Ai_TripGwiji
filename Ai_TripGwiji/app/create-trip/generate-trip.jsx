@@ -1,6 +1,7 @@
 import { View, Text, Image } from 'react-native'
 import React, { useContext } from 'react'
 import { Colors } from '../../constants/Colors'
+import { CreateTripContext } from "./../../context/CreateTripContext";
 
 export default function GenerateTrip() {
   const {tripData, setTripData}=useContext(CreateTripContext);
