@@ -16,7 +16,7 @@ export default function SelectDates() {
     });
   }, [])
    
-  const OnDateChange=()=>{
+  const OnDateChange=(date,type)=>{
     
   }
   const OnDateSelectionContinue=()=>{
