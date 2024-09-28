@@ -8,7 +8,7 @@ export default function GenerateTrip() {
   const {tripData, setTripData}=useContext(CreateTripContext);
 
   useEffect(()=>{
-    GenerateAiTrip()
+    tripData&&GenerateAiTrip()
   },[tripData])
 
   const GenerateAiTrip=()=>{
