@@ -15,6 +15,8 @@ export default function GenerateTrip() {
   },[tripData])
 
   const GenerateAiTrip=async()=>{
+
+    setLoading(true);
      
     const FINAL_PROMT=AI_PROMT
     .replace('{location}',tripData?.locationInfo?.name)
@@ -29,6 +31,7 @@ export default function GenerateTrip() {
 
     const result = await chatSession.sendMessage(FINAL_PROMPT);
     console.log(result.response.text());
+    setLoading(false);
   }
 
   return (
