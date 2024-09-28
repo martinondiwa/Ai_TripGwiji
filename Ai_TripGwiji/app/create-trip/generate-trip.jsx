@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { Colors } from '../../constants/Colors'
 
@@ -22,12 +22,15 @@ export default function GenerateTrip() {
 
       <Text
       style={{
-        fontFamily:'outfit-bold',
+        fontFamily:'outfit-medium',
         fontSize:18,
         textAlign:'center',
         marginTop:40
       }}
       > We are working to generate your dream trip</Text>
+
+      <Image source={'https://lottie.host/aced0e0a-674c-4f68-8da4-5a9eeb6709a4/lokiAMgBxd.json'}/>
+      
 
     </View>
   )
