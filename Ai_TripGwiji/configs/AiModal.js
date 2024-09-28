@@ -26,141 +26,18 @@ const {
       generationConfig,
    // safetySettings: Adjust safety settings
    // See https://ai.google.dev/gemini-api/docs/safety-settings
-      history: {
-    "location": "Goma, Democratic Republic of the Congo",
-    "travelers": "Couple",
-    "budget": "Luxury",
-    "duration": 3,
-    "totalNights": 2,
-    "hotels": [
+      history: [
       {
-        "name": "Lake Kivu Serena Hotel",
-        "address": "Avenue de l'Indépendance, Goma, Democratic Republic of the Congo",
-        "price": "From $250 per night",
-        "imageUrl": "https://www.serenahotels.com/sites/default/files/styles/hero_image/public/hero_images/lake_kivu_serena_hotel_hero_image.jpg?itok=jN1-uB3P",
-        "geoCoordinates": "-1.6669, 29.2259",
-        "rating": 4.5,
-        "description": "Overlooking Lake Kivu, this luxurious hotel offers stunning views, elegant rooms, a spa, and a variety of dining options."
+        role: "user",
+        parts: [
+          {text: "Generate Travel Plan for Location Goma, Democratic Republic of the Congo, for 3 and 2 for {Couple} with a Luxury budget, Give me a Hotels options list with HotelName, Hotel address, Price, hotel image url, geo coordinates, rating, descriptions and suggest itinerary with placeName, place Details, place Image url, Geo Coordinates, ticket Pricing, rating,  time to travel each of the location for 3 and {totalNights} with each day plan with best time to visit in JSON format."},
+        ],
       },
       {
-        "name": "Hotel Ihusi",
-        "address": "Avenue de l'Indépendance, Goma, Democratic Republic of the Congo",
-        "price": "From $150 per night",
-        "imageUrl": "https://www.tripadvisor.com/Tourism-g293815-Goma-Hotels-zfp229485.html",
-        "geoCoordinates": "-1.6656, 29.2266",
-        "rating": 4,
-        "description": "A well-established hotel in Goma, offering comfortable rooms, a restaurant, and a bar."
+        role: "model",
+        parts: [
+          {text: "```json\n{\n  \"location\": \"Goma, Democratic Republic of the Congo\",\n  \"travelers\": \"Couple\",\n  \"budget\": \"Luxury\",\n  \"duration\": 3,\n  \"totalNights\": 2,\n  \"hotels\": [\n    {\n      \"name\": \"Lake Kivu Serena Hotel\",\n      \"address\": \"Avenue de l'Indépendance, Goma, Democratic Republic of the Congo\",\n      \"price\": \"From $250 per night\",\n      \"imageUrl\": \"https://www.serenahotels.com/sites/default/files/styles/hero_image/public/hero_images/lake_kivu_serena_hotel_hero_image.jpg?itok=jN1-uB3P\",\n      \"geoCoordinates\": \"-1.6669, 29.2259\",\n      \"rating\": 4.5,\n      \"description\": \"Overlooking Lake Kivu, this luxurious hotel offers stunning views, elegant rooms, a spa, and a variety of dining options.\"\n    },\n    {\n      \"name\": \"Hotel Ihusi\",\n      \"address\": \"Avenue de l'Indépendance, Goma, Democratic Republic of the Congo\",\n      \"price\": \"From $150 per night\",\n      \"imageUrl\": \"https://www.tripadvisor.com/Tourism-g293815-Goma-Hotels-zfp229485.html\",\n      \"geoCoordinates\": \"-1.6656, 29.2266\",\n      \"rating\": 4,\n      \"description\": \"A well-established hotel in Goma, offering comfortable rooms, a restaurant, and a bar.\"\n    },\n    {\n      \"name\": \"The Virunga Lodge\",\n      \"address\": \"Inside Virunga National Park, Goma, Democratic Republic of the Congo\",\n      \"price\": \"From $350 per night\",\n      \"imageUrl\": \"https://www.virungalodge.org/\",\n      \"geoCoordinates\": \"-1.3331, 29.4659\",\n      \"rating\": 5,\n      \"description\": \"Located within Virunga National Park, this secluded lodge offers a unique safari experience with breathtaking views of the volcanoes.\"\n    }\n  ],\n  \"itinerary\": [\n    {\n      \"day\": 1,\n      \"title\": \"Arrival in Goma & Relaxation by Lake Kivu\",\n      \"description\": \"Upon arrival at Goma International Airport (GOM), you'll be greeted by your private driver and transferred to your luxurious hotel, Lake Kivu Serena Hotel. After settling in, enjoy a leisurely lunch at the hotel's restaurant with stunning lake views. Spend the afternoon relaxing by the pool, taking a dip in the lake, or enjoying a rejuvenating spa treatment. In the evening, savor a delicious dinner at the hotel's fine-dining restaurant and witness the captivating sunset over Lake Kivu.\",\n      \"places\": [\n        {\n          \"name\": \"Goma International Airport (GOM)\",\n          \"details\": \"The primary airport serving Goma.\",\n          \"imageUrl\": \"https://www.skyscanner.net/images/airports/GOM-Goma.jpg\",\n          \"geoCoordinates\": \"-1.6470, 29.2181\",\n          \"ticketPricing\": \"Varies depending on your origin and airline.\",\n          \"rating\": 3.5,\n          \"timeToTravel\": \"Depends on your flight duration.\"\n        },\n        {\n          \"name\": \"Lake Kivu Serena Hotel\",\n          \"details\": \"Your luxurious accommodation for the next few days.\",\n          \"imageUrl\": \"https://www.serenahotels.com/sites/default/files/styles/hero_image/public/hero_images/lake_kivu_serena_hotel_hero_image.jpg?itok=jN1-uB3P\",\n          \"geoCoordinates\": \"-1.6669, 29.2259\",\n          \"ticketPricing\": \"N/A\",\n          \"rating\": 4.5,\n          \"timeToTravel\": \"Approx. 15 minutes from the airport.\"\n        },\n        {\n          \"name\": \"Lake Kivu\",\n          \"details\": \"The largest lake in East Africa, known for its beauty and diverse wildlife.\",\n          \"imageUrl\": \"https://www.lonelyplanet.com/media/images/hero/lake-kivu-rwanda-DR-Congo-20210929-header.jpg\",\n          \"geoCoordinates\": \"-1.6669, 29.2259\",\n          \"ticketPricing\": \"N/A\",\n          \"rating\": 5,\n          \"timeToTravel\": \"N/A\"\n        }\n      ],\n      \"bestTime\": \"Morning to evening\",\n      \"notes\": \"This day is dedicated to arriving, settling in, and enjoying the tranquility of Lake Kivu.\"\n    },\n    {\n      \"day\": 2,\n      \"title\": \"Exploring Goma & Virunga National Park\",\n      \"description\": \"Start your day with a delicious breakfast at the hotel. After, embark on a guided tour of Goma, visiting historical sites like the UN peacekeeping base, the city's bustling markets, and the vibrant art scene. Later, head to Virunga National Park, a UNESCO World Heritage site, known for its diverse wildlife, including gorillas, chimpanzees, and numerous bird species. Enjoy a scenic drive through the park, stopping at various observation points for stunning views of the Virunga Volcanoes. In the evening, return to the hotel for a relaxing dinner.\"\n      \"places\": [\n        {\n          \"name\": \"UN peacekeeping base\",\n          \"details\": \"A reminder of Goma's turbulent past.\",\n          \"imageUrl\": \"https://www.un.org/en/peacekeeping/missions/monusco/images/gallery/20140326_GOM_MONUSCO_140326_GOM_MONUSCO_25.jpg\",\n          \"geoCoordinates\": \"-1.6671, 29.2259\",\n          \"ticketPricing\": \"N/A\",\n          \"rating\": 3.5,\n          \"timeToTravel\": \"Approx. 30 minutes from the hotel.\"\n        },\n        {\n          \"name\": \"Goma markets\",\n          \"details\": \"A vibrant and colorful experience.\",\n          \"imageUrl\": \"https://www.lonelyplanet.com/media/images/hero/goma-democratic-republic-of-congo-20190107-header.jpg\",\n          \"geoCoordinates\": \"-1.6669, 29.2259\",\n          \"ticketPricing\": \"N/A\",\n          \"rating\": 4,\n          \"timeToTravel\": \"Approx. 15 minutes from the UN peacekeeping base.\"\n        },\n        {\n          \"name\": \"Virunga National Park\",\n          \"details\": \"A UNESCO World Heritage site, home to diverse wildlife.\",\n          \"imageUrl\": \"https://www.virungapark.org/media/images/virunga-national-park-overview.jpg\",\n          \"geoCoordinates\": \"-1.3331, 29.4659\",\n          \"ticketPricing\": \"Around $300 per person for a gorilla trekking permit.\",\n          \"rating\": 5,\n          \"timeToTravel\": \"Approx. 2 hours from Goma.\"\n        }\n      ],\n      \"bestTime\": \"Morning to evening\",\n      \"notes\": \"Consider booking a gorilla trekking tour in advance, as permits are limited.\"\n    },\n    {\n      \"day\": 3,\n      \"title\": \"Farewell Breakfast & Departure\",\n      \"description\": \"Start your day with a leisurely breakfast at the hotel, enjoying the beautiful views one last time. After checkout, you'll be transferred back to Goma International Airport (GOM) for your departure. Take a moment to reflect on the amazing experiences you've had in Goma and its surrounding areas.\"\n      \"places\": [\n        {\n          \"name\": \"Lake Kivu Serena Hotel\",\n          \"details\": \"Your luxurious accommodation for the past nights.\",\n          \"imageUrl\": \"https://www.serenahotels.com/sites/default/files/styles/hero_image/public/hero_images/lake_kivu_serena_hotel_hero_image.jpg?itok=jN1-uB3P\",\n          \"geoCoordinates\": \"-1.6669, 29.2259\",\n          \"ticketPricing\": \"N/A\",\n          \"rating\": 4.5,\n          \"timeToTravel\": \"N/A\"\n        },\n        {\n          \"name\": \"Goma International Airport (GOM)\",\n          \"details\": \"The primary airport serving Goma.\",\n          \"imageUrl\": \"https://www.skyscanner.net/images/airports/GOM-Goma.jpg\",\n          \"geoCoordinates\": \"-1.6470, 29.2181\",\n          \"ticketPricing\": \"Varies depending on your destination and airline.\",\n          \"rating\": 3.5,\n          \"timeToTravel\": \"Approx. 15 minutes from the hotel.\"\n        }\n      ],\n      \"bestTime\": \"Morning\",\n      \"notes\": \"Ensure you have enough time for airport procedures before your flight.\"\n    }\n  ]\n}\n```\n\n**Important Notes:**\n\n* This itinerary is a suggestion and can be customized based on your interests and preferences.\n* The prices mentioned are approximate and subject to change.\n* It's essential to check the latest travel advisories and safety guidelines before planning your trip.\n* Consider hiring a local guide for a more immersive and informative experience.\n* Be aware of the political and security situation in the Democratic Republic of the Congo before traveling. \n\n**Additional Recommendations:**\n\n* **Take a boat trip on Lake Kivu:** Enjoy the scenic beauty of the lake and visit the nearby islands.\n* **Visit the Nyiragongo Volcano:** Witness the incredible sight of the world's largest lava lake (requires permits and a guided tour).\n* **Visit the Tchegera Island:** Explore this unique island with its diverse wildlife and natural beauty.\n* **Enjoy the local cuisine:** Try traditional Congolese dishes like fufu, pondu, and moambe.\n\nThis itinerary aims to provide a luxurious and unforgettable experience in Goma, Democratic Republic of the Congo. Remember to plan your trip wisely, taking into account safety precautions and respecting local customs."},
+        ],
       },
-      {
-        "name": "The Virunga Lodge",
-        "address": "Inside Virunga National Park, Goma, Democratic Republic of the Congo",
-        "price": "From $350 per night",
-        "imageUrl": "https://www.virungalodge.org/",
-        "geoCoordinates": "-1.3331, 29.4659",
-        "rating": 5,
-        "description": "Located within Virunga National Park, this secluded lodge offers a unique safari experience with breathtaking views of the volcanoes."
-      }
     ],
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival in Goma & Relaxation by Lake Kivu",
-        "description": "Upon arrival at Goma International Airport (GOM), you'll be greeted by your private driver and transferred to your luxurious hotel, Lake Kivu Serena Hotel. After settling in, enjoy a leisurely lunch at the hotel's restaurant with stunning lake views. Spend the afternoon relaxing by the pool, taking a dip in the lake, or enjoying a rejuvenating spa treatment. In the evening, savor a delicious dinner at the hotel's fine-dining restaurant and witness the captivating sunset over Lake Kivu.",
-        "places": [
-          {
-            "name": "Goma International Airport (GOM)",
-            "details": "The primary airport serving Goma.",
-            "imageUrl": "https://www.skyscanner.net/images/airports/GOM-Goma.jpg",
-            "geoCoordinates": "-1.6470, 29.2181",
-            "ticketPricing": "Varies depending on your origin and airline.",
-            "rating": 3.5,
-            "timeToTravel": "Depends on your flight duration."
-          },
-          {
-            "name": "Lake Kivu Serena Hotel",
-            "details": "Your luxurious accommodation for the next few days.",
-            "imageUrl": "https://www.serenahotels.com/sites/default/files/styles/hero_image/public/hero_images/lake_kivu_serena_hotel_hero_image.jpg?itok=jN1-uB3P",
-            "geoCoordinates": "-1.6669, 29.2259",
-            "ticketPricing": "N/A",
-            "rating": 4.5,
-            "timeToTravel": "Approx. 15 minutes from the airport."
-          },
-          {
-            "name": "Lake Kivu",
-            "details": "The largest lake in East Africa, known for its beauty and diverse wildlife.",
-            "imageUrl": "https://www.lonelyplanet.com/media/images/hero/lake-kivu-rwanda-DR-Congo-20210929-header.jpg",
-            "geoCoordinates": "-1.6669, 29.2259",
-            "ticketPricing": "N/A",
-            "rating": 5,
-            "timeToTravel": "N/A"
-          }
-        ],
-        "bestTime": "Morning to evening",
-        "notes": "This day is dedicated to arriving, settling in, and enjoying the tranquility of Lake Kivu."
-      },
-      {
-        "day": 2,
-        "title": "Exploring Goma & Virunga National Park",
-        "description": "Start your day with a delicious breakfast at the hotel. After, embark on a guided tour of Goma, visiting historical sites like the UN peacekeeping base, the city's bustling markets, and the vibrant art scene. Later, head to Virunga National Park, a UNESCO World Heritage site, known for its diverse wildlife, including gorillas, chimpanzees, and numerous bird species. Enjoy a scenic drive through the park, stopping at various observation points for stunning views of the Virunga Volcanoes. In the evening, return to the hotel for a relaxing dinner.",
-        "places": [
-          {
-            "name": "UN peacekeeping base",
-            "details": "A reminder of Goma's turbulent past.",
-            "imageUrl": "https://www.un.org/en/peacekeeping/missions/monusco/images/gallery/20140326_GOM_MONUSCO_140326_GOM_MONUSCO_25.jpg",
-            "geoCoordinates": "-1.6671, 29.2259",
-            "ticketPricing": "N/A",
-            "rating": 3.5,
-            "timeToTravel": "Approx. 30 minutes from the hotel."
-          },
-          {
-            "name": "Goma markets",
-            "details": "A vibrant and colorful experience.",
-            "imageUrl": "https://www.lonelyplanet.com/media/images/hero/goma-democratic-republic-of-congo-20190107-header.jpg",
-            "geoCoordinates": "-1.6669, 29.2259",
-            "ticketPricing": "N/A",
-            "rating": 4,
-            "timeToTravel": "Approx. 15 minutes from the UN peacekeeping base."
-          },
-          {
-            "name": "Virunga National Park",
-            "details": "A UNESCO World Heritage site, home to diverse wildlife.",
-            "imageUrl": "https://www.virungapark.org/media/images/virunga-national-park-overview.jpg",
-            "geoCoordinates": "-1.3331, 29.4659",
-            "ticketPricing": "Around $300 per person for a gorilla trekking permit.",
-            "rating": 5,
-            "timeToTravel": "Approx. 2 hours from Goma."
-          }
-        ],
-        "bestTime": "Morning to evening",
-        "notes": "Consider booking a gorilla trekking tour in advance, as permits are limited."
-      },
-      {
-        "day": 3,
-        "title": "Farewell Breakfast & Departure",
-        "description": "Start your day with a leisurely breakfast at the hotel, enjoying the beautiful views one last time. After checkout, you'll be transferred back to Goma International Airport (GOM) for your departure. Take a moment to reflect on the amazing experiences you've had in Goma and its surrounding areas.",
-        "places": [
-          {
-            "name": "Lake Kivu Serena Hotel",
-            "details": "Your luxurious accommodation for the past nights.",
-            "imageUrl": "https://www.serenahotels.com/sites/default/files/styles/hero_image/public/hero_images/lake_kivu_serena_hotel_hero_image.jpg?itok=jN1-uB3P",
-            "geoCoordinates": "-1.6669, 29.2259",
-            "ticketPricing": "N/A",
-            "rating": 4.5,
-            "timeToTravel": "N/A"
-          },
-          {
-            "name": "Goma International Airport (GOM)",
-            "details": "Departure point for your journey home.",
-            "imageUrl": "https://www.skyscanner.net/images/airports/GOM-Goma.jpg",
-            "geoCoordinates": "-1.6470, 29.2181",
-            "ticketPricing": "Varies depending on your origin and airline.",
-            "rating": 3.5,
-            "timeToTravel": "Approx. 15 minutes from the hotel."
-          }
-        ],
-        "bestTime": "Morning",
-        "notes": "Make sure to confirm your departure time in advance."
-      }
-    ]
-  }
-});
+  });
