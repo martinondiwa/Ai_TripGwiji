@@ -5,6 +5,11 @@ import { CreateTripContext } from "./../../context/CreateTripContext";
 
 export default function GenerateTrip() {
   const {tripData, setTripData}=useContext(CreateTripContext);
+
+  const GenerateAiTrip=()=>{
+    
+  }
+
   return (
     <View
     style={{
