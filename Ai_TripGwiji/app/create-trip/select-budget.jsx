@@ -1,8 +1,8 @@
 import { View, Text, FlatList } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from 'expo-router'
-
-export default function SelectBudget() {
+import OptionCard from './../../Components/CreateTrip/OptionCard'
+export default function OptionCard({options}) {
     const navigation=useNavigation();
 
     useEffect(()=>{
@@ -40,7 +40,9 @@ export default function SelectBudget() {
        <FlatList
        data={SelectBudgetOptions}
        renderItem={({item,index})=>(
-        
+        <View>
+           <OptionCard/>
+        </View>
        )}
        />
       </View>
