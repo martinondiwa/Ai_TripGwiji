@@ -30,9 +30,11 @@ export default function GenerateTrip() {
 
     console.log(FINAL_PROMT);
 
-    const result = await chatSession.sendMessage(FINAL_PROMPT);
-    console.log(result.response.text());
-    setLoading(false);
+    //const result = await chatSession.sendMessage(FINAL_PROMPT);
+    //console.log(result.response.text());
+    setLoading(false)
+
+    router.push('(tabs)/mytrip');
   }
 
   return (
