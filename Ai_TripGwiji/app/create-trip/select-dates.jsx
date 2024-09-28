@@ -3,7 +3,7 @@ import React from 'react'
 import { useNavigation } from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import { useEffect } from 'react';
-
+import CalendarPicker from "react-native-calendar-picker";
 
 export default function SelectDates() {
 
@@ -32,6 +32,8 @@ export default function SelectDates() {
         marginTop:20
       }}
       >Travel Dates</Text>
+      <CalendarPicker onDateChange={this.onDateChange} />
+
     </View>
   )
 }
