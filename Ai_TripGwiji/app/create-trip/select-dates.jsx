@@ -37,7 +37,10 @@ export default function SelectDates() {
 
     }
     const totalNoOfDays=endDate.diff(startDate,'days');
-    console.log(totalNoOfDays);
+    console.log(totalNoOfDays+1);
+    setTripData({
+      ...tripData,
+    })
 
   }
   return (
