@@ -33,7 +33,11 @@ export default function SelectDates() {
       >
         Travel Dates
       </Text>
-      <View>
+      <View
+      style={{
+        marginTop:30
+      }}
+      >
         <CalendarPicker onDateChange={this.onDateChange} />
       </View>
     </View>
