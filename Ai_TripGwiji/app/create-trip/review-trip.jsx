@@ -3,12 +3,13 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useNavigation } from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import EvilIcons from '@expo/vector-icons/EvilIcons';
+import { CreateTripContext } from '../../context/CreateTripContext';
 
 
 export default function ReviewTrip() {
 
     const navigation=useNavigation();
-    const {tripData,setTripData}=useContext();
+    const {tripData,setTripData}=useContext(CreateTripContext);
 
     useEffect(()=>{
         navigation.setOptions({
