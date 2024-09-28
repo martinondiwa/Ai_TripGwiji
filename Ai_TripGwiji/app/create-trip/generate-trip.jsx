@@ -4,12 +4,13 @@ import { Colors } from '../../constants/Colors'
 import { CreateTripContext } from "./../../context/CreateTripContext";
 import { AI_PROMT } from '../../constants/Options';
 import { chatSession } from '../../configs/AiModal';
+import { useRouter } from 'expo-router';
 
 export default function GenerateTrip() {
   const {tripData, setTripData}=useContext(CreateTripContext);
 
   const [loading,setLoading]=useState(false);
-
+  const router=useRouter();
   useEffect(()=>{
     tripData&&GenerateAiTrip()
   },[tripData])
