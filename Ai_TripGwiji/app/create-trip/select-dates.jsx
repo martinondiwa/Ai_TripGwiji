@@ -24,6 +24,9 @@ export default function SelectDates() {
     if (type=='START_DATE'){
       setStartDate(moment(date))
     }
+    else {
+      setEndDate(moment(date))
+    }
   }
   const OnDateSelectionContinue=()=>{
 
