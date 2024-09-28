@@ -30,7 +30,9 @@ export default function SelectBudget() {
       >Budget</Text>
       <View
       style={{
-        marginTop:20
+        marginTop:20,
+        height:'100%',
+        backgroundColor:'lightblue'
       }}
       >
        <Text
