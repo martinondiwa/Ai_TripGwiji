@@ -49,7 +49,14 @@ export default function SelectDates() {
             backgroundColor:Colors.PRIMARY,
             borderRadius: 15
           }}>
-                <Text>Continue</Text>
+                <Text
+                style={{
+                  fontFamily:'outfit-medium',
+                  color:'aliceblue',
+                  textAlign:'center',
+                  fontSize:20
+                }}
+                >Continue</Text>
           </TouchableOpacity>
         </View>
       </View>
