@@ -36,6 +36,8 @@ export default function GenerateTrip() {
         objectFit:'contain'
       }}
       />
+
+      <Text>Do not Go Back</Text>
       
 
     </View>
