@@ -5,6 +5,7 @@ import OptionCard from './../../Components/CreateTrip/OptionCard';
 import { SelectBudgetOptions } from '../../constants/Options';
 import { TouchableOpacity } from 'react-native';
 import { CreateTripContext } from '../../context/CreateTripContext';
+import { Colors } from '../../constants/Colors';
 
 export default function SelectBudget() {
     const navigation=useNavigation();
