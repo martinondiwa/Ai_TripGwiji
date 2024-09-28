@@ -37,7 +37,14 @@ export default function GenerateTrip() {
       }}
       />
 
-      <Text>Do not Go Back</Text>
+      <Text
+      style={{
+        fontFamily:'outfit',
+        color:Colors.GRAY,
+        fontSize:20,
+        textAlign:'center'
+      }}
+      >Do not Go Back</Text>
       
 
     </View>
