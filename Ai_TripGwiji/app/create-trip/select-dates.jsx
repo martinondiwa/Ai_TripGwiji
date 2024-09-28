@@ -20,7 +20,7 @@ export default function SelectDates() {
     
   }
   const OnDateSelectionContinue=()=>{
-
+ console.log(date,type)
   }
   return (
     <View
