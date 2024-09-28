@@ -8,6 +8,7 @@ import CalendarPicker from "react-native-calendar-picker";
 export default function SelectDates() {
   const navigation = useNavigation();
   const [startDate,setStartDate]=useState();
+  const [endDate,setEndDate]=useState();
 
   useEffect(() => {
     navigation.setOptions({
