@@ -153,6 +153,40 @@ export default function ReviewTrip() {
           </View>
         </View>
 
+        
+        <View
+          style={{
+            marginTop: 25,
+            display: "flex",
+            flexDirection: "row",
+            gap: 20,
+          }}
+        >
+          <EvilIcons name="location" size={34} color="black" />
+
+          <View>
+            <Text
+              style={{
+                fontFamily: "outfit-regular",
+                fontSize: 20,
+                color: "goldenbrown",
+              }}
+            >
+              Budget
+            </Text>
+            <Text
+              style={{
+                fontFamily: "outfit-medium",
+                fontSize: 20,
+              }}
+            >
+             {tripData?.traveler?.title}
+                  
+            </Text>
+          </View>
+        </View>
+
+
       </View>
     </View>
   );
