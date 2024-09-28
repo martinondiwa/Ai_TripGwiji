@@ -57,7 +57,7 @@ export default function SelectBudget() {
       <View
       style={{
         marginTop:20,
-        height:'100%',
+        height:'auto',
         backgroundColor:'lightblue',
         borderRadius:15
       }}

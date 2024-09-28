@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from 'expo-router'
+import { Colors } from '../../constants/Colors';
 
 export default function ReviewTrip() {
 
@@ -14,7 +15,14 @@ export default function ReviewTrip() {
         })
     },[])
   return (
-    <View>
+    <View
+    style={{
+        padding:25,
+        paddingTop:75,
+        backgroundColor:Colors.GRAY,
+        height:'100%'
+    }}
+    >
       <Text>review-trip</Text>
     </View>
   )
