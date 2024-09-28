@@ -12,6 +12,7 @@ export default function GenerateTrip() {
     const FINAL_PROMT=AI_PROMT
     .replace('{location}',tripData?.locationInfo?.name)
     .replace('{totalDays}',tripData?.totalNoOfDays)
+    .replace('{totalDays}',tripData?.totalNoOfDays-1)
   }
 
   return (
