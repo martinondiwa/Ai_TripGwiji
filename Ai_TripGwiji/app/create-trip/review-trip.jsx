@@ -43,7 +43,12 @@ export default function ReviewTrip() {
      > Before generating your trip, please riview your selection</Text>
      </View>
      <View>
+     <View>
      <EvilIcons name="location" size={24} color="black" />
+     </View>
+     <View>
+     <Text></Text>
+     </View>
      </View>
     </View>
   )
