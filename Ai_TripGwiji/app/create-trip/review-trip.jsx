@@ -6,7 +6,7 @@ import EvilIcons from "@expo/vector-icons/EvilIcons";
 import { CreateTripContext } from "../../context/CreateTripContext";
 import moment from "moment";
 import Ionicons from '@expo/vector-icons/Ionicons';
-
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 export default function ReviewTrip() {
   const navigation = useNavigation();
@@ -163,7 +163,7 @@ export default function ReviewTrip() {
             gap: 20,
           }}
         >
-          <EvilIcons name="location" size={34} color="black" />
+          <FontAwesome6 name="money-bill-1" size={24} color="black" />
 
           <View>
             <Text
