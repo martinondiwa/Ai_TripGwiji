@@ -21,7 +21,7 @@ export default function SelectDates() {
     style={{
       padding:25,
       paddingTop:75,
-      backgroundColor: 'alice-blue',
+      backgroundColor: 'aliceblue',
       height:'100%'
     }}
     >
