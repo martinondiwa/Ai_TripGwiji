@@ -25,7 +25,11 @@ export default function SelectDates() {
       height:'100%'
     }}
     >
-      <Text>select dates</Text>
+      <Text
+      style={{
+        fontFamily:'outfit-bold',
+      }}
+      >Travel Dates</Text>
     </View>
   )
 }
