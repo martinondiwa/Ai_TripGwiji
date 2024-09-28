@@ -46,7 +46,10 @@ export default function ReviewTrip() {
      </View>
      <View>
      <View style={{
-        marginTop:20
+        marginTop:20,
+        display:'flex',
+        flexDirection:'row',
+        gap:20
      }}>
      <EvilIcons name="location" size={34} color="black" />
      </View>
