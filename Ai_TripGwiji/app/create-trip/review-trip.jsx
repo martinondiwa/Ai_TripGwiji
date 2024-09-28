@@ -56,7 +56,7 @@ export default function ReviewTrip() {
       <View>
         <View
           style={{
-            marginTop: 20,
+            marginTop: 40,
             display: "flex",
             flexDirection: "row",
             gap: 20,
