@@ -20,10 +20,13 @@ export default function SelectDates() {
   }, [])
    
   const OnDateChange=(date,type)=>{
-    
+    console.log(date,type);
+    if (type=='START_DATE'){
+      setStartDate(moment(date))
+    }
   }
   const OnDateSelectionContinue=()=>{
- console.log(date,type)
+
   }
   return (
     <View
