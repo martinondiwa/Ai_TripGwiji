@@ -23,6 +23,9 @@ export default function GenerateTrip() {
     .replace('{totalNight}',tripData.totalNoOfDays-1);
 
     console.log(FINAL_PROMT);
+
+    const result = await chatSession.sendMessage("INSERT_INPUT_HERE");
+    console.log(result.response.text());
   }
 
   return (
