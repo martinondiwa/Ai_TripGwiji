@@ -70,7 +70,7 @@ export default function SelectBudget() {
       <View>
       <TouchableOpacity
 
-      onPress={OnDateSelectionContinue}
+      onPress={OnClickContinue()}
       
       style={{
         padding:15,
