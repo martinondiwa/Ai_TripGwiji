@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "expo-router";
 import { Colors } from "../../constants/Colors";
@@ -43,6 +43,14 @@ export default function SelectDates() {
         minDate={new Date}
         maxRangeDuration={20}
         />
+        <View>
+          <TouchableOpacity style={{
+            padding:15,
+            backgroundColor:Colors.PRIMARY
+          }}>
+                <Text>Continue</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
