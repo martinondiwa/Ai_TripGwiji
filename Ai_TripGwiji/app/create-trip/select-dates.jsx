@@ -19,7 +19,7 @@ export default function SelectDates() {
     });
   }, [])
    
-  const OnDateChange=(date,type)=>{
+  const onDateChange=(date,type)=>{
     console.log(date,type);
     if (type=='START_DATE'){
       setStartDate(moment(date))
@@ -43,7 +43,7 @@ export default function SelectDates() {
       startDate:startDate,
       endDate:endDate,
       totalNoOfDays:totalNoOfDays+1
-    })
+    });
 
   }
   return (
@@ -69,7 +69,7 @@ export default function SelectDates() {
         marginTop:30
       }}
       >
-        <CalendarPicker onDateChange={this.onDateChange} 
+        <CalendarPicker onDateChange={onDateChange} 
         allowRangeSelection={true}
         minDate={new Date}
         maxRangeDuration={20}
@@ -82,7 +82,8 @@ export default function SelectDates() {
           style={{
             padding:15,
             backgroundColor:Colors.PRIMARY,
-            borderRadius: 15
+            borderRadius: 15,
+            marginTop:35
           }}>
                 <Text
                 style={{
