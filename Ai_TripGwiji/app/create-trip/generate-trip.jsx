@@ -9,7 +9,7 @@ export default function GenerateTrip() {
 
   const GenerateAiTrip=()=>{
      
-    const FINAL_PROMT=AI_PROMT.replace()
+    const FINAL_PROMT=AI_PROMT.replace('{location}',tripData?.locationInfo?.name)
   }
 
   return (
