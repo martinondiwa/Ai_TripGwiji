@@ -10,7 +10,7 @@ export default function GenerateTrip() {
     style={{
         padding:25,
         paddingTop:75,
-        backgroundColor:Colors.GRAY,
+        backgroundColor:'orange',
         height:'100%'
     }}
     >
