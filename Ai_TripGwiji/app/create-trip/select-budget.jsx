@@ -2,6 +2,7 @@ import { View, Text, FlatList } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { useNavigation } from 'expo-router'
 import OptionCard from './../../Components/CreateTrip/OptionCard'
+import { TouchableOpacity } from 'react-native';
 
 export default function SelectBudgetOptions() {
     const navigation=useNavigation();
@@ -45,9 +46,11 @@ export default function SelectBudgetOptions() {
        <FlatList
        data={SelectBudgetOptions}
        renderItem={({item,index})=>(
-        <View>
+        <TouchableOpacity
+        onPress={()=>setSelectedOption()}
+         style={{marginVertical:10}}>
            <OptionCard option={item} selectedOption={selectedOption}/>
-        </View>
+        </TouchableOpacity>
        )}
        />
       </View>
