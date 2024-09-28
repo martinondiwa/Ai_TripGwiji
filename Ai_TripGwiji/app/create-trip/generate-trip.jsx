@@ -1,8 +1,9 @@
 import { View, Text, Image } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import { Colors } from '../../constants/Colors'
 
 export default function GenerateTrip() {
+  const {tripData, setTripData}=useContext(CreateTripContext);
   return (
     <View
     style={{
