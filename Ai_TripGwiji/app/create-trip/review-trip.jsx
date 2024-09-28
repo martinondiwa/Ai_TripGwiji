@@ -191,7 +191,7 @@ export default function ReviewTrip() {
         <View>
        <TouchableOpacity
 
-      
+      onPress={()=>onClickContinue()}
        
        style={{
          padding:15,
