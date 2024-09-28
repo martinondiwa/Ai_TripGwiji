@@ -15,8 +15,13 @@ export default function SelectDates() {
       headerTitle: "",
     });
   }, [])
+   
+  const OnDateChange=()=>{
+    
+  }
+  const OnDateSelectionContinue=()=>{
 
-  const OnDateSelectionContinue=()=>{}
+  }
   return (
     <View
       style={{
