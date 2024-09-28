@@ -29,8 +29,17 @@ export default function ReviewTrip() {
         fontSize:35,
         marginTop:20
       }}
-      >review-trip</Text>
-      <Text> Before generating your trip, please riview your selection</Text>
+      >Review your trip</Text>
+     <View style={{
+        marginTop:20
+     }}>
+     <Text
+     style={{
+        fontFamily:'outfit-bold',
+        fontSize:20
+     }}
+     > Before generating your trip, please riview your selection</Text>
+     </View>
     </View>
   )
 }
