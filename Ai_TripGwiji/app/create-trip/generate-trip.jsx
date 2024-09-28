@@ -27,7 +27,7 @@ export default function GenerateTrip() {
         textAlign:'center',
         marginTop:40
       }}
-      >generate-trip</Text>
+      > We are working to generate your dream trip</Text>
 
     </View>
   )
