@@ -18,7 +18,9 @@ export default function GenerateTrip() {
     .replace('{totalDays}',tripData.totalNoOfDays)
     .replace('{totalNight}',tripData.totalNoOfDays-1)
     .replace('traveler', tripData.traveler?.title)
-    .replace('{budget}',tripData.budget);
+    .replace('{budget}',tripData.budget)
+    .replace('{totalDays}',tripData.totalNoOfDays)
+    .replace('{totalNight}',tripData.totalNoOfDays-1);
 
     console.log(FINAL_PROMT);
   }
