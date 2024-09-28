@@ -197,7 +197,7 @@ export default function ReviewTrip() {
          padding:15,
          backgroundColor:Colors.PRIMARY,
          borderRadius: 15,
-         marginTop:35
+         marginTop:40
        }}>
              <Text
              style={{
