@@ -18,7 +18,12 @@ export default function SelectBudget() {
             headerTransparent:true,
             headerTitle:''
         })
-    },[])
+    },[]);
+
+    useEffect(()=>{
+
+    },[selectedOption])
+
   return (
     <View 
     style={{
