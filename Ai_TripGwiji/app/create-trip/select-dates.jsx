@@ -40,6 +40,9 @@ export default function SelectDates() {
     console.log(totalNoOfDays+1);
     setTripData({
       ...tripData,
+      startDate:startDate,
+      endDate:endDate,
+      totalNoOfDays:totalNoOfDays+1
     })
 
   }
