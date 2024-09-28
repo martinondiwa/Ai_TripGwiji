@@ -46,7 +46,8 @@ export default function SelectDates() {
         <View>
           <TouchableOpacity style={{
             padding:15,
-            backgroundColor:Colors.PRIMARY
+            backgroundColor:Colors.PRIMARY,
+            borderRadius: 15
           }}>
                 <Text>Continue</Text>
           </TouchableOpacity>
