@@ -4,6 +4,7 @@ import { useNavigation } from "expo-router";
 import { Colors } from "../../constants/Colors";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import { CreateTripContext } from "../../context/CreateTripContext";
+import moment from "moment";
 
 export default function ReviewTrip() {
   const navigation = useNavigation();
@@ -108,7 +109,7 @@ export default function ReviewTrip() {
                 fontSize: 20,
               }}
             >
-              {tripData?.locationInfo?.name}
+              {moment(tripData?.startDate).format('DD MMM')}
             </Text>
           </View>
         </View>
