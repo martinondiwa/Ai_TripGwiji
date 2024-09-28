@@ -9,7 +9,9 @@ export default function GenerateTrip() {
 
   const GenerateAiTrip=()=>{
      
-    const FINAL_PROMT=AI_PROMT.replace('{location}',tripData?.locationInfo?.name)
+    const FINAL_PROMT=AI_PROMT
+    .replace('{location}',tripData?.locationInfo?.name)
+    .replace('{totalDays}',tripData?.totalNoOfDays)
   }
 
   return (
