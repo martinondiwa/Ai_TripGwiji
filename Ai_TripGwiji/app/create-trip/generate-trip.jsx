@@ -23,8 +23,9 @@ export default function GenerateTrip() {
       <Text
       style={{
         fontFamily:'outfit-bold',
-        fontSize:35,
-        textAlign:'center'
+        fontSize:18,
+        textAlign:'center',
+        marginTop:40
       }}
       >generate-trip</Text>
 
