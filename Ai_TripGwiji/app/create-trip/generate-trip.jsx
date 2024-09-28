@@ -15,6 +15,8 @@ export default function GenerateTrip() {
     .replace('{totalNight}',tripData.totalNoOfDays-1)
     .replace('traveler', tripData.traveler?.title)
     .replace('{budget}',tripData.budget);
+
+    console.log(FINAL_PROMT);
   }
 
   return (
