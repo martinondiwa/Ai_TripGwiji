@@ -1,6 +1,6 @@
 import { View, Text, FlatList, ToastAndroid } from 'react-native'
 import React, { useContext, useEffect, useState } from 'react'
-import { router, useNavigation } from 'expo-router'
+import { router, useNavigation, useRouter } from 'expo-router'
 import OptionCard from './../../Components/CreateTrip/OptionCard';
 import { SelectBudgetOptions } from '../../constants/Options';
 import { TouchableOpacity } from 'react-native';
@@ -12,6 +12,7 @@ export default function SelectBudget() {
 
     const [selectedOption,setSelectedOption]=useState();
     const {tripData,setTripData}=useContext(CreateTripContext);
+    const router=useRouter();
 
     useEffect(()=>{
         navigation.setOptions({
