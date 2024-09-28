@@ -25,7 +25,7 @@ export default function GenerateTrip() {
 
     console.log(FINAL_PROMT);
 
-    const result = await chatSession.sendMessage("FINAL_PROMPT");
+    const result = await chatSession.sendMessage(FINAL_PROMPT);
     console.log(result.response.text());
   }
 
