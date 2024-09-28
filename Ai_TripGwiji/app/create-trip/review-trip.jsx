@@ -181,7 +181,7 @@ export default function ReviewTrip() {
                 fontSize: 20,
               }}
             >
-             {tripData?.traveler?.title}
+             {tripData?.budget}
                   
             </Text>
           </View>
