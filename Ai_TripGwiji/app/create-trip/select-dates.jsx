@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, ToastAndroid } from "react-native";
 import React, { useState } from "react";
 import { useNavigation } from "expo-router";
 import { Colors } from "../../constants/Colors";
@@ -29,6 +29,13 @@ export default function SelectDates() {
     }
   }
   const OnDateSelectionContinue=()=>{
+
+    if (!startDate&&!endDate)
+    {
+      ToastAndroid.show('Please set Start and End Date')
+      return ;
+
+    }
     const totalNoOfDays=endDate.diff(startDate,'days');
     console.log(totalNoOfDays);
 
