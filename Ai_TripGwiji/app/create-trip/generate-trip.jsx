@@ -1,11 +1,15 @@
 import { View, Text, Image } from 'react-native'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Colors } from '../../constants/Colors'
 import { CreateTripContext } from "./../../context/CreateTripContext";
 import { AI_PROMT } from '../../constants/Options';
 
 export default function GenerateTrip() {
   const {tripData, setTripData}=useContext(CreateTripContext);
+
+  useEffect(()=>{
+    GenerateAiTrip()
+  },[tripData])
 
   const GenerateAiTrip=()=>{
      
