@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { useNavigation } from 'expo-router'
+import { Colors } from '../../constants/Colors';
 
 export default function SelectDates() {
 
@@ -18,6 +19,8 @@ export default function SelectDates() {
     style={{
       padding:25,
       paddingTop:75,
+      backgroundColor: 'alice-blue',
+      height:'100%'
     }}
     >
       <Text>select dates</Text>
