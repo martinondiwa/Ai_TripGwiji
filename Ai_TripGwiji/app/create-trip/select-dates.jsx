@@ -14,7 +14,12 @@ export default function SelectDates() {
     })
   },[])
   return (
-    <View>
+    <View
+    style={{
+      padding:25,
+      paddingTop:75,
+    }}
+    >
       <Text>select dates</Text>
     </View>
   )
