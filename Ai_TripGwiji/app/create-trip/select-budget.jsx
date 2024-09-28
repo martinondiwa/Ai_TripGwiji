@@ -38,7 +38,7 @@ export default function SelectBudget() {
             return;
         }
 
-        router.push('');
+        router.push('/create-trip/review-trip');
     }
 
   return (
@@ -79,28 +79,29 @@ export default function SelectBudget() {
         </TouchableOpacity>
        )}
        />
-      </View>
-      <View>
-      <TouchableOpacity
+       <View>
+       <TouchableOpacity
 
-      onPress={OnClickContinue()}
-      
-      style={{
-        padding:15,
-        backgroundColor:Colors.PRIMARY,
-        borderRadius: 15,
-        marginTop:35
-      }}>
-            <Text
-            style={{
-              fontFamily:'outfit-medium',
-              color:'aliceblue',
-              textAlign:'center',
-              fontSize:20
-            }}
-            >Continue</Text>
-      </TouchableOpacity>
+       onPress={OnClickContinue()}
+       
+       style={{
+         padding:15,
+         backgroundColor:Colors.PRIMARY,
+         borderRadius: 15,
+         marginTop:35
+       }}>
+             <Text
+             style={{
+               fontFamily:'outfit-medium',
+               color:'aliceblue',
+               textAlign:'center',
+               fontSize:20
+             }}
+             >Continue</Text>
+       </TouchableOpacity>
+       </View>
       </View>
+     
     </View>
   )
 }
