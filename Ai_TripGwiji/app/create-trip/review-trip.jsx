@@ -23,7 +23,11 @@ export default function ReviewTrip() {
         height:'100%'
     }}
     >
-      <Text>review-trip</Text>
+      <Text
+      style={{
+        fontFamily:'outfit-bold'
+      }}
+      >review-trip</Text>
     </View>
   )
 }
