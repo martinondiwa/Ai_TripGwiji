@@ -25,8 +25,17 @@ export default function SelectBudget() {
         marginTop:20
       }}
       >Budget</Text>
-      <View>
-       <Text>Choose sending habits for your trip</Text>
+      <View
+      style={{
+        marginTop:20
+      }}
+      >
+       <Text
+       style={{
+        fontFamily:'outfit-bold',
+        fontSize:20
+       }}
+       >Choose sending habits for your trip</Text>
       </View>
     </View>
   )
