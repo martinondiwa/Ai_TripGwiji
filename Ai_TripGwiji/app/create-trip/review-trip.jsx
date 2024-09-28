@@ -109,7 +109,7 @@ export default function ReviewTrip() {
                 fontSize: 20,
               }}
             >
-              {moment(tripData?.startDate).format('DD MMM')}
+              {moment(tripData?.startDate).format('DD MMM')+"To"+moment(tripData.endDate.format('DD MMM'))}
             </Text>
           </View>
         </View>
