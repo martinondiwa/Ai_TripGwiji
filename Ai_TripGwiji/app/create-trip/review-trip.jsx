@@ -5,6 +5,7 @@ import { Colors } from "../../constants/Colors";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import { CreateTripContext } from "../../context/CreateTripContext";
 import moment from "moment";
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 
 export default function ReviewTrip() {
@@ -129,7 +130,7 @@ export default function ReviewTrip() {
             gap: 20,
           }}
         >
-          <EvilIcons name="location" size={34} color="black" />
+         <Ionicons name="people" size={24} color="black" />
 
           <View>
             <Text
