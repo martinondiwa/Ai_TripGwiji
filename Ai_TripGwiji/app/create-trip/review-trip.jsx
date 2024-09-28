@@ -2,6 +2,8 @@ import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from 'expo-router'
 import { Colors } from '../../constants/Colors';
+import EvilIcons from '@expo/vector-icons/EvilIcons';
+
 
 export default function ReviewTrip() {
 
@@ -39,6 +41,9 @@ export default function ReviewTrip() {
         fontSize:20
      }}
      > Before generating your trip, please riview your selection</Text>
+     </View>
+     <View>
+     <EvilIcons name="location" size={24} color="black" />
      </View>
     </View>
   )
