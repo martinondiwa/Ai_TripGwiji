@@ -28,6 +28,8 @@ export default function SelectDates() {
       <Text
       style={{
         fontFamily:'outfit-bold',
+        fontSize:35,
+        marginTop:20
       }}
       >Travel Dates</Text>
     </View>
