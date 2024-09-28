@@ -54,8 +54,19 @@ export default function ReviewTrip() {
      <EvilIcons name="location" size={34} color="black" />
      </View>
      <View>
-     <Text>Destination</Text>
-     <Text>{tripData?.locationInfo?.name}</Text>
+     <Text
+     style={{
+        fontFamily:'outfit-regular',
+        fontSize:20,
+        color:'goldenbrown'
+     }}
+     >Destination</Text>
+     <Text
+    style={{
+         fontFamily:'outfit-medium',
+         fontSize:20
+    }}
+     >{tripData?.locationInfo?.name}</Text>
      </View>
      </View>
     </View>
