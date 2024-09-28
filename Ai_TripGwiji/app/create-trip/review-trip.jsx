@@ -6,7 +6,13 @@ export default function ReviewTrip() {
 
     const navigation=useNavigation();
 
-    useEffect(())
+    useEffect(()=>{
+        navigation.setOptions({
+            headerShown:true,
+            headerTransparent:true,
+            headerTitle:''
+        })
+    },[])
   return (
     <View>
       <Text>review-trip</Text>
