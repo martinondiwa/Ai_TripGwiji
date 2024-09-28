@@ -1,5 +1,5 @@
 import { View, Text, Image } from 'react-native'
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Colors } from '../../constants/Colors'
 import { CreateTripContext } from "./../../context/CreateTripContext";
 import { AI_PROMT } from '../../constants/Options';
@@ -7,6 +7,8 @@ import { chatSession } from '../../configs/AiModal';
 
 export default function GenerateTrip() {
   const {tripData, setTripData}=useContext(CreateTripContext);
+
+  const [loading,setLoading]=useState(false);
 
   useEffect(()=>{
     tripData&&GenerateAiTrip()
