@@ -25,6 +25,9 @@ export default function SelectBudget() {
         marginTop:20
       }}
       >Budget</Text>
+      <View>
+       <Text>Choose sending habits for your trip</Text>
+      </View>
     </View>
   )
 }
