@@ -11,9 +11,10 @@ export default function GenerateTrip() {
      
     const FINAL_PROMT=AI_PROMT
     .replace('{location}',tripData?.locationInfo?.name)
-    .replace('{totalDays}',tripData?.totalNoOfDays)
-    .replace('{totalNight}',tripData?.totalNoOfDays-1)
-    .replace('traveler', tripData?.traveler?.title)
+    .replace('{totalDays}',tripData.totalNoOfDays)
+    .replace('{totalNight}',tripData.totalNoOfDays-1)
+    .replace('traveler', tripData.traveler?.title)
+    .replace('{budget}',tripData.budget);
   }
 
   return (
