@@ -43,11 +43,13 @@ export default function ReviewTrip() {
      > Before generating your trip, please riview your selection</Text>
      </View>
      <View>
-     <View>
-     <EvilIcons name="location" size={24} color="black" />
+     <View style={{
+        marginTop:20
+     }}>
+     <EvilIcons name="location" size={34} color="black" />
      </View>
      <View>
-     <Text></Text>
+     <Text>Destination</Text>
      </View>
      </View>
     </View>
