@@ -2,6 +2,8 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { useNavigation } from 'expo-router'
 import { Colors } from '../../constants/Colors';
+import { useEffect } from 'react';
+
 
 export default function SelectDates() {
 
