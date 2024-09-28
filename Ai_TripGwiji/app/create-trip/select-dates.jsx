@@ -44,7 +44,11 @@ export default function SelectDates() {
         maxRangeDuration={20}
         />
         <View>
-          <TouchableOpacity style={{
+          <TouchableOpacity
+
+          onPress={OnDateSelectionContinue}
+          
+          style={{
             padding:15,
             backgroundColor:Colors.PRIMARY,
             borderRadius: 15
