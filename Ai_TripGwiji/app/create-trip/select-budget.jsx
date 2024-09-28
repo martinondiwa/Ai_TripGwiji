@@ -21,7 +21,11 @@ export default function SelectBudget() {
     },[]);
 
     useEffect(()=>{
-
+          
+        selectedOption&&setTripData({
+            ...tripData,
+            budget:selectedOption?.title
+        })
     },[selectedOption])
 
   return (
