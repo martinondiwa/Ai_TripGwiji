@@ -29,10 +29,11 @@ export default function GenerateTrip() {
       }}
       > We are working to generate your dream trip</Text>
 
-      <Image source={'https://lottie.host/aced0e0a-674c-4f68-8da4-5a9eeb6709a4/lokiAMgBxd.json'} 
+      <Image source={'./../../assets/images/adaptive-icon.png'} 
       style={{
         width:'100%',
-        height:300
+        height:300, 
+        objectFit:'contain'
       }}
       />
       
