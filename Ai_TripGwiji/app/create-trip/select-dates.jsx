@@ -4,7 +4,7 @@ import React from 'react'
 export default function SelectDates() {
   return (
     <View>
-      <Text>select-dates</Text>
+      <Text>select dates</Text>
     </View>
   )
 }

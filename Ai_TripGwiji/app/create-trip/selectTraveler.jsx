@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import { useNavigation} from 'expo-router'
+import { Link, useNavigation} from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import { FlatList } from 'react-native';
 import { SelectTravelesList } from '../../constants/Options';
@@ -8,7 +8,6 @@ import OptionCard from '../../Components/CreateTrip/OptionCard';
 import { TouchableOpacity } from 'react-native';
 import { useContext } from 'react';
 import { CreateTripContext } from '../../context/CreateTripContext';
-import { Link } from '@react-navigation/native';
 
 
 export default function selectTraveler() {
@@ -70,7 +69,7 @@ export default function selectTraveler() {
        />
       </View>
 
-      <Link href={'/create-trip/select-dates'}>
+      <Link href={'/create-trip/select-dates'}> 
       <TouchableOpacity
 
 
