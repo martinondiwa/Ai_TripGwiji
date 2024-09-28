@@ -1,10 +1,12 @@
 import { View, Text, FlatList } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigation } from 'expo-router'
 import OptionCard from './../../Components/CreateTrip/OptionCard'
 
 export default function SelectBudget() {
     const navigation=useNavigation();
+
+    const [selectedOption,setSelectedOption]=useState();
 
     useEffect(()=>{
         navigation.setOptions({
@@ -42,7 +44,7 @@ export default function SelectBudget() {
        data={SelectBudgetOptions}
        renderItem={({item,index})=>(
         <View>
-           <OptionCard/>
+           <OptionCard option={item} selectedOption={}/>
         </View>
        )}
        />
