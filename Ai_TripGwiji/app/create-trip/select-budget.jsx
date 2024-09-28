@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, FlatList } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from 'expo-router'
 
@@ -36,6 +36,13 @@ export default function SelectBudget() {
         fontSize:20
        }}
        >Choose sending habits for your trip</Text>
+
+       <FlatList
+       data={SelectBudgetOptions}
+       renderItem={({item,index})=>(
+        
+       )}
+       />
       </View>
     </View>
   )
