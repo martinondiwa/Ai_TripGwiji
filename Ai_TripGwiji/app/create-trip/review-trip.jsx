@@ -7,6 +7,7 @@ import { CreateTripContext } from "../../context/CreateTripContext";
 import moment from "moment";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import { TouchableOpacity } from "react-native";
 
 export default function ReviewTrip() {
   const navigation = useNavigation();
@@ -186,7 +187,28 @@ export default function ReviewTrip() {
             </Text>
           </View>
         </View>
+        
+        <View>
+       <TouchableOpacity
 
+       onPress={OnClickContinue()}
+       
+       style={{
+         padding:15,
+         backgroundColor:Colors.PRIMARY,
+         borderRadius: 15,
+         marginTop:35
+       }}>
+             <Text
+             style={{
+               fontFamily:'outfit-medium',
+               color:'aliceblue',
+               textAlign:'center',
+               fontSize:20
+             }}
+             >Continue</Text>
+       </TouchableOpacity>
+       </View>
 
       </View>
     </View>
