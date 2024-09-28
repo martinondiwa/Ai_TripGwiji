@@ -14,7 +14,9 @@ export default function SelectDates() {
       headerTransparent: true,
       headerTitle: "",
     });
-  }, []);
+  }, [])
+
+  const OnDateSelectionContinue=()=>{}
   return (
     <View
       style={{
