@@ -69,7 +69,7 @@ export default function selectTraveler() {
        />
       </View>
 
-      <Link href={'/create-trip/select-dates'}> 
+     
       <TouchableOpacity
 
 
@@ -80,7 +80,14 @@ export default function selectTraveler() {
         marginTop:13
         
       }} 
+      
       >
+      <Link href={'/create-trip/select-dates'}
+       style={{
+        width:'100%',
+        textAlign:'center'
+       }}
+      > 
        <Text 
        style={{
         textAlign:'center',
@@ -89,8 +96,9 @@ export default function selectTraveler() {
        
        }}
        >Continue</Text>
+       </Link>
       </TouchableOpacity>
-      </Link>
+    
     </View>
   )
 }
