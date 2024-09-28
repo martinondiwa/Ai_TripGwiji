@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useNavigation } from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import EvilIcons from '@expo/vector-icons/EvilIcons';
@@ -8,6 +8,7 @@ import EvilIcons from '@expo/vector-icons/EvilIcons';
 export default function ReviewTrip() {
 
     const navigation=useNavigation();
+    const {tripData,setTripData}=useContext();
 
     useEffect(()=>{
         navigation.setOptions({
@@ -49,6 +50,7 @@ export default function ReviewTrip() {
      <EvilIcons name="location" size={34} color="black" />
      </View>
      <View>
+     <Text>Destination</Text>
      <Text>Destination</Text>
      </View>
      </View>
