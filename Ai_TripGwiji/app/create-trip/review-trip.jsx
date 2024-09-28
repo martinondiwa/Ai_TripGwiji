@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React, { useContext, useEffect, useState } from "react";
-import { useNavigation } from "expo-router";
+import { useNavigation, useRouter } from "expo-router";
 import { Colors } from "../../constants/Colors";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import { CreateTripContext } from "../../context/CreateTripContext";
@@ -8,10 +8,13 @@ import moment from "moment";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { TouchableOpacity } from "react-native";
+import { useRoute } from "@react-navigation/native";
 
 export default function ReviewTrip() {
   const navigation = useNavigation();
   const { tripData, setTripData } = useContext(CreateTripContext);
+
+  const router=useRouter();
 
   useEffect(() => {
     navigation.setOptions({
