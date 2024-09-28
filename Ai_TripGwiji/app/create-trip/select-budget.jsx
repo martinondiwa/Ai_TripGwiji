@@ -1,14 +1,16 @@
 import { View, Text, FlatList } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useNavigation } from 'expo-router'
 import OptionCard from './../../Components/CreateTrip/OptionCard';
 import { SelectBudgetOptions } from '../../constants/Options';
 import { TouchableOpacity } from 'react-native';
+import { CreateTripContext } from '../../context/CreateTripContext';
 
 export default function SelectBudget() {
     const navigation=useNavigation();
 
     const [selectedOption,setSelectedOption]=useState();
+    const {tripData,setTripData}=useContext(CreateTripContext);
 
     useEffect(()=>{
         navigation.setOptions({
@@ -34,7 +36,8 @@ export default function SelectBudget() {
       style={{
         marginTop:20,
         height:'100%',
-        backgroundColor:'lightblue'
+        backgroundColor:'lightblue',
+        borderRadius:15
       }}
       >
        <Text
