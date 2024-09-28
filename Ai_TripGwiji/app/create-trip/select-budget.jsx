@@ -1,4 +1,4 @@
-import { View, Text, FlatList } from 'react-native'
+import { View, Text, FlatList, ToastAndroid } from 'react-native'
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigation } from 'expo-router'
 import OptionCard from './../../Components/CreateTrip/OptionCard';
@@ -27,6 +27,15 @@ export default function SelectBudget() {
             budget:selectedOption?.title
         })
     },[selectedOption])
+
+    const OnClickContinue=()=>{
+
+        if(!selectedOption)
+        {
+            ToastAndroid.show('Select Your Budget', ToastAndroid.BOTTOM)
+            return;
+        }
+    }
 
   return (
     <View 
