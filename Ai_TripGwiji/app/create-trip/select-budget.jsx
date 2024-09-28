@@ -47,7 +47,7 @@ export default function SelectBudgetOptions() {
        data={SelectBudgetOptions}
        renderItem={({item,index})=>(
         <TouchableOpacity
-        onPress={()=>setSelectedOption()}
+        onPress={()=>setSelectedOption(item)}
          style={{marginVertical:10}}>
            <OptionCard option={item} selectedOption={selectedOption}/>
         </TouchableOpacity>
