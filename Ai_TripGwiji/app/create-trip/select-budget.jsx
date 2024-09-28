@@ -1,10 +1,11 @@
 import { View, Text, FlatList } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { useNavigation } from 'expo-router'
-import OptionCard from './../../Components/CreateTrip/OptionCard'
+import OptionCard from './../../Components/CreateTrip/OptionCard';
+import { SelectBudgetOptions } from '../../constants/Options';
 import { TouchableOpacity } from 'react-native';
 
-export default function SelectBudgetOptions() {
+export default function SelectBudget() {
     const navigation=useNavigation();
 
     const [selectedOption,setSelectedOption]=useState();
