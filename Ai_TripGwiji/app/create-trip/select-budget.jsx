@@ -44,7 +44,7 @@ export default function SelectBudget() {
        data={SelectBudgetOptions}
        renderItem={({item,index})=>(
         <View>
-           <OptionCard option={item} selectedOption={}/>
+           <OptionCard option={item} selectedOption={selectedOption}/>
         </View>
        )}
        />
