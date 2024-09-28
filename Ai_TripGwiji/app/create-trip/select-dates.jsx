@@ -30,6 +30,7 @@ export default function SelectDates() {
   }
   const OnDateSelectionContinue=()=>{
     const totalNoOfDays=endDate.diff(startDate,'days');
+    console.log(totalNoOfDays);
 
   }
   return (
