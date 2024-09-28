@@ -4,7 +4,7 @@ import { useNavigation } from "expo-router";
 import { Colors } from "../../constants/Colors";
 import { useEffect } from "react";
 import CalendarPicker from "react-native-calendar-picker";
-import {moment} from 'moment'
+import {moment} from 'moment';
 
 export default function SelectDates() {
   const navigation = useNavigation();
@@ -15,7 +15,7 @@ export default function SelectDates() {
     navigation.setOptions({
       headerShown: true,
       headerTransparent: true,
-      headerTitle: "",
+      headerTitle: '',
     });
   }, [])
    
@@ -32,7 +32,7 @@ export default function SelectDates() {
 
     if (!startDate&&!endDate)
     {
-      ToastAndroid.show('Please set Start and End Date')
+      ToastAndroid.show('Please set Start and End Date', ToastAndroid.LONG)
       return ;
 
     }
