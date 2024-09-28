@@ -139,7 +139,7 @@ export default function ReviewTrip() {
                 color: "goldenbrown",
               }}
             >
-              Travel Date
+              Who is travelling ?
             </Text>
             <Text
               style={{
