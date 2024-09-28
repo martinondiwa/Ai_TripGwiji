@@ -48,7 +48,7 @@ export default function SelectDates() {
       endDate:endDate,
       totalNoOfDays:totalNoOfDays+1
     });
-
+    router.push('/create-trip/select-budget')
   }
   return (
     <View
