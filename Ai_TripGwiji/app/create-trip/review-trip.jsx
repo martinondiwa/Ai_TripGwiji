@@ -52,7 +52,7 @@ export default function ReviewTrip() {
         gap:20
      }}>
      <EvilIcons name="location" size={34} color="black" />
-     </View>
+     
      <View>
      <Text
      style={{
@@ -67,6 +67,7 @@ export default function ReviewTrip() {
          fontSize:20
     }}
      >{tripData?.locationInfo?.name}</Text>
+     </View>
      </View>
      </View>
     </View>
