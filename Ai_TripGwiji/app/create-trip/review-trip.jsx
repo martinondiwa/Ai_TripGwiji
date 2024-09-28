@@ -206,7 +206,7 @@ export default function ReviewTrip() {
                textAlign:'center',
                fontSize:20
              }}
-             >Continue</Text>
+             >Build My Trip</Text>
        </TouchableOpacity>
        </View>
 
