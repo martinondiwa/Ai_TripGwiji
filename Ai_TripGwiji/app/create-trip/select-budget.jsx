@@ -24,7 +24,7 @@ export default function SelectBudget() {
         fontSize:35,
         marginTop:20
       }}
-      >select-budget</Text>
+      >Budget</Text>
     </View>
   )
 }
