@@ -13,8 +13,18 @@ export default function SelectBudget() {
         })
     },[])
   return (
-    <View>
-      <Text>select-budget</Text>
+    <View 
+    style={{
+        paddingTop:75,
+        padding:25
+    }}>
+      <Text
+      style={{
+        fontFamily:'outfit-bold',
+        fontSize:35,
+        marginTop:20
+      }}
+      >select-budget</Text>
     </View>
   )
 }
