@@ -38,7 +38,8 @@ export default function SelectDates() {
         marginTop:30
       }}
       >
-        <CalendarPicker onDateChange={this.onDateChange} />
+        <CalendarPicker onDateChange={this.onDateChange} 
+        allowBackwardRangeSelect={true}/>
       </View>
     </View>
   );
