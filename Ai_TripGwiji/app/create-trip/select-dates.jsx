@@ -32,6 +32,40 @@ export default function SelectDates() {
         marginTop:20
       }}
       >Travel Dates</Text>
+
+      <CalendarPicker
+          startFromMonday={true}
+          allowRangeSelection={true}
+          minDate={minDate}
+          maxDate={maxDate}
+          weekdays={["Seg", "Ter", "Qua", "Qui", "Sex", "Sab", "Dom"]}
+          months={[
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro",
+          ]}
+          previousTitle="Anterior"
+          nextTitle="Próximo"
+          todayBackgroundColor="#e6ffe6"
+          selectedDayColor="#66ff33"
+          selectedDayTextColor="#000000"
+          scaleFactor={375}
+          textStyle={{
+            fontFamily: "Cochin",
+            color: "#000000",
+          }}
+          onDateChange={this.onDateChange}
+        />
+
     </View>
   )
 }
