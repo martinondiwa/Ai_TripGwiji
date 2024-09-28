@@ -5,11 +5,13 @@ import { Colors } from "../../constants/Colors";
 import { useEffect } from "react";
 import CalendarPicker from "react-native-calendar-picker";
 import {moment} from 'moment';
+import { useContext } from "react";
 
 export default function SelectDates() {
   const navigation = useNavigation();
   const [startDate,setStartDate]=useState();
   const [endDate,setEndDate]=useState();
+  const {tripData,setTripData}=useContext(CreateTripContext);
 
   useEffect(() => {
     navigation.setOptions({
