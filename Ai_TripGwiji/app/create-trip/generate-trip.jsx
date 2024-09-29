@@ -7,11 +7,13 @@ import { chatSession } from '../../configs/AiModal';
 import { useRouter } from 'expo-router';
 import {auth,db} from './../../configs/FirebaseConfig'
 import {doc,setDoc} from 'firebase/firestore';
+
 export default function GenerateTrip() {
   const {tripData, setTripData}=useContext(CreateTripContext);
 
   const [loading,setLoading]=useState(false);
   const router=useRouter();
+  const user=auth.currentUser;
   useEffect(()=>{
     tripData&&GenerateAiTrip()
   },[tripData])
