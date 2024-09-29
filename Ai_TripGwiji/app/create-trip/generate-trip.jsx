@@ -34,7 +34,7 @@ export default function GenerateTrip() {
     //console.log(result.response.text());
     setLoading(false)
 
-    router.push('(tabs)/mytrip');
+    //router.push('(tabs)/mytrip');
   }
 
   return (
