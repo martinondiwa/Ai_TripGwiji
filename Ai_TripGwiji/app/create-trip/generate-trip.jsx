@@ -33,7 +33,7 @@ export default function GenerateTrip() {
     //const result = await chatSession.sendMessage(FINAL_PROMPT);
     //console.log(result.response.text());
     setLoading(false)
-
+     const docId=(Date.now()).toString();
     //router.push('(tabs)/mytrip');
   }
 
