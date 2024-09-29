@@ -5,7 +5,7 @@ import { CreateTripContext } from "./../../context/CreateTripContext";
 import { AI_PROMT } from '../../constants/Options';
 import { chatSession } from '../../configs/AiModal';
 import { useRouter } from 'expo-router';
-
+import {doc,setDoc} from 'firebase/firestore';
 export default function GenerateTrip() {
   const {tripData, setTripData}=useContext(CreateTripContext);
 
