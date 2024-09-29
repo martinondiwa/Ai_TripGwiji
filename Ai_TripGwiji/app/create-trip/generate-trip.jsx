@@ -1,6 +1,6 @@
 import { View, Text, Image } from 'react-native'
 import React, { useContext, useEffect, useState } from 'react'
-import { Colors } from '../../constants/Colors'
+import { Colors } from '../../constants/Colors';
 import { CreateTripContext } from "./../../context/CreateTripContext";
 import { AI_PROMT } from '../../constants/Options';
 import { chatSession } from '../../configs/AiModal';
@@ -34,7 +34,9 @@ export default function GenerateTrip() {
     //console.log(result.response.text());
     setLoading(false)
      const docId=(Date.now()).toString();
-     await setDoc(doc(db,"userTrips", docId))
+     await setDoc(doc(db,"userTrips", docId),{
+
+     })
     //router.push('(tabs)/mytrip');
   }
 
