@@ -34,6 +34,7 @@ export default function GenerateTrip() {
     //console.log(result.response.text());
     setLoading(false)
      const docId=(Date.now()).toString();
+     await setDoc(doc(db,"userTrips", docId))
     //router.push('(tabs)/mytrip');
   }
 
