@@ -38,6 +38,7 @@ export default function GenerateTrip() {
     setLoading(false)
      const docId=(Date.now()).toString();
      await setDoc(doc(db,"userTrips", docId),{
+      userEmail:user.email,
 
      })
     //router.push('(tabs)/mytrip');
