@@ -42,10 +42,9 @@ export default function GenerateTrip() {
       userEmail:user.email,
       tripData:tripResp
      })
-    if (result_)
-    {
+   
       router.push('(tabs)/mytrip');
-    }
+    
   }
 
   return (
