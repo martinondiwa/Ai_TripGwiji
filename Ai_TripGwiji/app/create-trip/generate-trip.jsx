@@ -33,9 +33,9 @@ export default function GenerateTrip() {
 
     console.log(FINAL_PROMT);
 
-    const result = await chatSession.sendMessage(FINAL_PROMPT);
+    const result = await chatSession.sendMessage(FINAL_PROMT);
     console.log(result.response.text());
-    const tripResp=JSON.parse(result.response.text())
+    const tripResp=JSON.parse(result.response.text());
     setLoading(false)
      const docId=(Date.now()).toString();
      const result_=await setDoc(doc(db,"userTrips", docId),{
