@@ -44,7 +44,7 @@ export default function GenerateTrip() {
      })
     if (result_)
     {
-      
+      router.push('(tabs)/mytrip');
     }
   }
 
